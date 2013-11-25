@@ -5,7 +5,7 @@
 //  Created by Clover on 13-11-25.
 //  Copyright (c) 2013年 Clover. All rights reserved.
 //
-//  https://github.com/CloverFly/lx_repository/Lx_PopViewiPhone
+//  https://github.com/CloverFly/lx_repository/tree/master/code/Lx_PopViewiPhone
 
 #import "ViewController.h"
 #import "BaseTableViewController.h"
