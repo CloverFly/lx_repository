@@ -25,6 +25,17 @@
     self.title = @"Popover Title";
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param aTableDataDic <#aTableDataDic description#>
+ */
+-(void)setTableData:(NSDictionary*)aTableDataDic
+{
+    
+    [self.tableView reloadData];
+}
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

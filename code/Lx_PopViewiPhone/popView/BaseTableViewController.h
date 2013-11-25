@@ -22,6 +22,7 @@
 @interface BaseTableViewController : UITableViewController
 @property(nonatomic,assign) id<BaseTableViewControllerDelagate> delegate;
 @property(nonatomic,assign)LXPopoverController*lx_popViewController;
+@property(nonatomic,strong)NSDictionary*m_TableDataDic;
 @end
 
 
