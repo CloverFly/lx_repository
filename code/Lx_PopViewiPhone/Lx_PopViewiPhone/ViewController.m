@@ -30,10 +30,11 @@
 -(void)popover:(id)sender
 {
     //the controller we want to present as a popover
-    BaseTableViewController *controller = [[BaseTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    BaseTableViewController *baseController = [[BaseTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    baseController.delegate = self;
     
-    LXPopoverController *popover = [[LXPopoverController alloc] initWithViewController:controller];
-
+    LXPopoverController *popover = [[LXPopoverController alloc] initWithViewController:baseController];
+    baseController.lx_popViewController = popover;
     //popover.arrowDirection = FPPopoverArrowDirectionAny;
     popover.tint = LXPopoverDefaultTint;
     
@@ -59,6 +60,12 @@
     [self popover:sender];
 }
 
-
-
+-(void)baseTableViewController:(BaseTableViewController *)baseTableViewController didDismissPopover:(LXPopoverController *)lxPopViewController didSelectedIndexPath:(NSIndexPath *)aIndexPath reSelectedDictory:(NSDictionary *)aselectedDictory
+{
+    NSLog(@"%d==%d",[aIndexPath section],[aIndexPath row]);
+    if (lxPopViewController!=nil)
+    {
+        [lxPopViewController dismissPopoverAnimated:YES];
+    }
+}
 @end

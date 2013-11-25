@@ -123,12 +123,12 @@
 		B3981FC918432E0300810A41 /* popView */ = {
 			isa = PBXGroup;
 			children = (
-				B3981FD9184330FE00810A41 /* LXTouchView.m */,
 				B3981FDA184330FE00810A41 /* LXTouchView.h */,
-				B3981FDB184330FE00810A41 /* LXPopoverView.m */,
+				B3981FD9184330FE00810A41 /* LXTouchView.m */,
 				B3981FDC184330FE00810A41 /* LXPopoverView.h */,
-				B3981FDD184330FE00810A41 /* LXPopoverController.m */,
+				B3981FDB184330FE00810A41 /* LXPopoverView.m */,
 				B3981FDE184330FE00810A41 /* LXPopoverController.h */,
+				B3981FDD184330FE00810A41 /* LXPopoverController.m */,
 				B3981FD618432F4500810A41 /* BaseTableViewController.h */,
 				B3981FD718432F4500810A41 /* BaseTableViewController.m */,
 			);
@@ -330,6 +330,7 @@
 				B3981FC818432DD700810A41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

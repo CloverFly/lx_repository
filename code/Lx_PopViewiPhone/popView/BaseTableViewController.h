@@ -8,7 +8,20 @@
 //  https://github.com/CloverFly/lx_repository/tree/master/code/Lx_PopViewiPhone
 
 #import <UIKit/UIKit.h>
+#import "LXPopoverController.h"
+@class BaseTableViewController;
 
-@interface BaseTableViewController : UITableViewController
+@protocol BaseTableViewControllerDelagate <NSObject>
+
+@optional
+- (void)baseTableViewController:(BaseTableViewController *)baseTableViewController  didDismissPopover:(LXPopoverController*)lxPopViewController didSelectedIndexPath:(NSIndexPath*)aIndexPath reSelectedDictory:(NSDictionary*)aselectedDictory;
 
 @end
+
+
+@interface BaseTableViewController : UITableViewController
+@property(nonatomic,assign) id<BaseTableViewControllerDelagate> delegate;
+@property(nonatomic,assign)LXPopoverController*lx_popViewController;
+@end
+
+

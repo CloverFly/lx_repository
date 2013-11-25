@@ -9,8 +9,9 @@
 
 #import <UIKit/UIKit.h>
 #import "LXPopoverController.h"
+#import "BaseTableViewController.h"
 @interface ViewController : UIViewController
-<LXPopoverControllerDelegate>
+<LXPopoverControllerDelegate,BaseTableViewControllerDelagate>
 {
     
 }

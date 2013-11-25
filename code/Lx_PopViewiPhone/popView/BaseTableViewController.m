@@ -14,6 +14,9 @@
 @end
 
 @implementation BaseTableViewController
+@synthesize delegate;
+@synthesize lx_popViewController;
+
 
 - (void)viewDidLoad
 {
@@ -55,6 +58,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if ([self.delegate respondsToSelector:@selector(baseTableViewController:didDismissPopover: didSelectedIndexPath: reSelectedDictory:)])
+    {
+        [self.delegate baseTableViewController:self didDismissPopover:self.lx_popViewController didSelectedIndexPath:indexPath reSelectedDictory:nil];
+    }
 }
 
 @end
