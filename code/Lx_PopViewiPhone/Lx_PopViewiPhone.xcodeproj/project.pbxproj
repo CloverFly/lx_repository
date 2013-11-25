@@ -22,6 +22,7 @@
 		B3981FDF184330FF00810A41 /* LXTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3981FD9184330FE00810A41 /* LXTouchView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B3981FE0184330FF00810A41 /* LXPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3981FDB184330FE00810A41 /* LXPopoverView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B3981FE1184330FF00810A41 /* LXPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3981FDD184330FE00810A41 /* LXPopoverController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B39B724518434FFC0070F23C /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = B39B724418434FFC0070F23C /* data.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		B3981FDC184330FE00810A41 /* LXPopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPopoverView.h; sourceTree = "<group>"; };
 		B3981FDD184330FE00810A41 /* LXPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPopoverController.m; sourceTree = "<group>"; };
 		B3981FDE184330FE00810A41 /* LXPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPopoverController.h; sourceTree = "<group>"; };
+		B39B724418434FFC0070F23C /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		B3981FAD18432DD700810A41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B39B724418434FFC0070F23C /* data.plist */,
 				B3981FAE18432DD700810A41 /* Lx_PopViewiPhone-Info.plist */,
 				B3981FAF18432DD700810A41 /* InfoPlist.strings */,
 				B3981FB218432DD700810A41 /* main.m */,
@@ -191,6 +194,7 @@
 				B3981FBB18432DD700810A41 /* Default@2x.png in Resources */,
 				B3981FBD18432DD700810A41 /* Default-568h@2x.png in Resources */,
 				B3981FC318432DD700810A41 /* ViewController.xib in Resources */,
+				B39B724518434FFC0070F23C /* data.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

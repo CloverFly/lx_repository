@@ -35,6 +35,11 @@
     
     LXPopoverController *popover = [[LXPopoverController alloc] initWithViewController:baseController];
     baseController.lx_popViewController = popover;
+    
+    
+    NSDictionary*fileDic = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"data" ofType:@"plist"]];
+    
+    [baseController setTableData:fileDic];
     //popover.arrowDirection = FPPopoverArrowDirectionAny;
     popover.tint = LXPopoverDefaultTint;
     
@@ -43,11 +48,8 @@
         popover.contentSize = CGSizeMake(300, 500);
     }
     popover.arrowDirection = LXPopoverArrowDirectionAny;
-    
-    //sender is the UIButton view
     [popover presentPopoverFromView:sender];
 }
-
 
 - (void)presentedNewPopoverController:(LXPopoverController *)newPopoverController
           shouldDismissVisiblePopover:(LXPopoverController*)visiblePopoverController
@@ -60,9 +62,10 @@
     [self popover:sender];
 }
 
--(void)baseTableViewController:(BaseTableViewController *)baseTableViewController didDismissPopover:(LXPopoverController *)lxPopViewController didSelectedIndexPath:(NSIndexPath *)aIndexPath reSelectedDictory:(NSDictionary *)aselectedDictory
+-(void)baseTableViewController:(BaseTableViewController *)baseTableViewController didDismissPopover:(LXPopoverController *)lxPopViewController didSelectedIndexPath:(NSIndexPath *)aIndexPath reSelectedDictory:(NSDictionary *)aSelectedDictory
 {
-    NSLog(@"%d==%d",[aIndexPath section],[aIndexPath row]);
+    NSLog(@"%d:%@",[aIndexPath row],aSelectedDictory);
+    
     if (lxPopViewController!=nil)
     {
         [lxPopViewController dismissPopoverAnimated:YES];

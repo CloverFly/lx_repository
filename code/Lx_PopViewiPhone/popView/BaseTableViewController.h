@@ -23,6 +23,9 @@
 @property(nonatomic,assign) id<BaseTableViewControllerDelagate> delegate;
 @property(nonatomic,assign)LXPopoverController*lx_popViewController;
 @property(nonatomic,strong)NSDictionary*m_TableDataDic;
+
+
+-(void)setTableData:(NSDictionary*)aTableDataDic;
 @end
 
 
