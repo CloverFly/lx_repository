@@ -57,6 +57,8 @@
         
         self.tint = LXPopoverDefaultTint;
         
+        
+        
         [self addSubview:_titleLabel];
         [self setupViews];
     }
