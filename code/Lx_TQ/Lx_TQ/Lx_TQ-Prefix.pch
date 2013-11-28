@@ -1,0 +1,19 @@
+//
+// Prefix header for all source files of the 'Lx_TQ' target in the 'Lx_TQ' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+
+#define API_SERVERSE @"http://www.weather.com.cn/"
+#define API_WEATHER_REALTIME(cityId) [NSString stringWithFormat:@"%@data/sk/%@.html",API_SERVERSE,cityId]
+#define API_WEATHER_FORCAST(cityId)  [NSString stringWithFormat:@"http://m.weather.com.cn/data/%@.html",cityId]
