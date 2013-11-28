@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>84AC862C-DAF9-4275-8324-8326BF42E8ED</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CLImageEditorDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BC118121-06E1-4F7D-98FA-FBEF610605AC</key>
+		<string>https://github.com/CloverFly/lx_repository</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>trunk/code/CLImageEditor/CLImageEditorDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BC118121-06E1-4F7D-98FA-FBEF610605AC</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>BC118121-06E1-4F7D-98FA-FBEF610605AC</key>
+		<string>https://126.com@github.com/CloverFly/lx_repository</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://126.com@github.com/CloverFly/lx_repository/trunk/code/CLImageEditor/CLImageEditorDemo.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BC118121-06E1-4F7D-98FA-FBEF610605AC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryBranchesRelativeLocationKey</key>
+			<string>branches</string>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
+			<string>trunk</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BC118121-06E1-4F7D-98FA-FBEF610605AC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>lx_GitHub</string>
+		</dict>
+	</array>
+</dict>
+</plist>
