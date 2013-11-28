@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+<UITableViewDelegate, UITableViewDataSource,UISearchDisplayDelegate, UISearchBarDelegate>
 
 -(IBAction)updaWeather:(UIButton*)sender;
+
+
 
 @end
