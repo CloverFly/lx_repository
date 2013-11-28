@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B308D8D118446E1C004C5185 /* NPContentNinePatchDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B308D8CE18446E1C004C5185 /* NPContentNinePatchDemoView.m */; };
+		B308D8D218446E1C004C5185 /* NPNinePatchDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B308D8D018446E1C004C5185 /* NPNinePatchDemoView.m */; };
+		B308D8D7184478D9004C5185 /* g.9.png in Resources */ = {isa = PBXBuildFile; fileRef = B308D8D6184478D8004C5185 /* g.9.png */; };
+		B308D8D918447D9E004C5185 /* aaaa.png in Resources */ = {isa = PBXBuildFile; fileRef = B308D8D818447D9E004C5185 /* aaaa.png */; };
+		B308D8FB18448B47004C5185 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = B308D8FA18448B47004C5185 /* circle.png */; };
+		B3201DC218443F7F00B0F754 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3201DC118443F7F00B0F754 /* UIKit.framework */; };
+		B3201DC418443F7F00B0F754 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3201DC318443F7F00B0F754 /* Foundation.framework */; };
+		B3201DC618443F7F00B0F754 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3201DC518443F7F00B0F754 /* CoreGraphics.framework */; };
+		B3201DCC18443F7F00B0F754 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3201DCA18443F7F00B0F754 /* InfoPlist.strings */; };
+		B3201DCE18443F7F00B0F754 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3201DCD18443F7F00B0F754 /* main.m */; };
+		B3201DD218443F7F00B0F754 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3201DD118443F7F00B0F754 /* AppDelegate.m */; };
+		B3201DD418443F7F00B0F754 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B3201DD318443F7F00B0F754 /* Default.png */; };
+		B3201DD618443F7F00B0F754 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3201DD518443F7F00B0F754 /* Default@2x.png */; };
+		B3201DD818443F7F00B0F754 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3201DD718443F7F00B0F754 /* Default-568h@2x.png */; };
+		B3201DDB18443F7F00B0F754 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3201DDA18443F7F00B0F754 /* ViewController.m */; };
+		B3201DDE18443F7F00B0F754 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3201DDC18443F7F00B0F754 /* ViewController.xib */; };
+		B3201DFC1844405100B0F754 /* TUCachingNinePatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B3201DE71844405100B0F754 /* TUCachingNinePatch.m */; };
+		B3201DFD1844405100B0F754 /* TUNinePatchCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B3201DE91844405100B0F754 /* TUNinePatchCache.m */; };
+		B3201DFE1844405100B0F754 /* TUNinePatchCachingCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = B3201DEC1844405100B0F754 /* TUNinePatchCachingCategories.m */; };
+		B3201DFF1844405100B0F754 /* UIImage-TUNinePatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B3201DEE1844405100B0F754 /* UIImage-TUNinePatch.m */; };
+		B3201E001844405100B0F754 /* TUDebugLoggingAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = B3201DF11844405100B0F754 /* TUDebugLoggingAssistant.m */; };
+		B3201E011844405100B0F754 /* TUFullNinePatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B3201DF41844405100B0F754 /* TUFullNinePatch.m */; };
+		B3201E021844405100B0F754 /* TUHorizontalNinePatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B3201DF61844405100B0F754 /* TUHorizontalNinePatch.m */; };
+		B3201E031844405100B0F754 /* TUNinePatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B3201DF81844405100B0F754 /* TUNinePatch.m */; };
+		B3201E041844405100B0F754 /* TUVerticalNinePatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B3201DFB1844405100B0F754 /* TUVerticalNinePatch.m */; };
+		B3201E061844409000B0F754 /* test.9.png in Resources */ = {isa = PBXBuildFile; fileRef = B3201E051844409000B0F754 /* test.9.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B308D8CD18446E1C004C5185 /* NPContentNinePatchDemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPContentNinePatchDemoView.h; sourceTree = "<group>"; };
+		B308D8CE18446E1C004C5185 /* NPContentNinePatchDemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPContentNinePatchDemoView.m; sourceTree = "<group>"; };
+		B308D8CF18446E1C004C5185 /* NPNinePatchDemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPNinePatchDemoView.h; sourceTree = "<group>"; };
+		B308D8D018446E1C004C5185 /* NPNinePatchDemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPNinePatchDemoView.m; sourceTree = "<group>"; };
+		B308D8D318446E5E004C5185 /* NinePatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NinePatch.h; sourceTree = "<group>"; };
+		B308D8D6184478D8004C5185 /* g.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = g.9.png; sourceTree = "<group>"; };
+		B308D8D818447D9E004C5185 /* aaaa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aaaa.png; sourceTree = "<group>"; };
+		B308D8FA18448B47004C5185 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		B3201DBE18443F7F00B0F754 /* Lx_NinePng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lx_NinePng.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3201DC118443F7F00B0F754 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B3201DC318443F7F00B0F754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B3201DC518443F7F00B0F754 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B3201DC918443F7F00B0F754 /* Lx_NinePng-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lx_NinePng-Info.plist"; sourceTree = "<group>"; };
+		B3201DCB18443F7F00B0F754 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B3201DCD18443F7F00B0F754 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B3201DCF18443F7F00B0F754 /* Lx_NinePng-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lx_NinePng-Prefix.pch"; sourceTree = "<group>"; };
+		B3201DD018443F7F00B0F754 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B3201DD118443F7F00B0F754 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B3201DD318443F7F00B0F754 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B3201DD518443F7F00B0F754 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B3201DD718443F7F00B0F754 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B3201DD918443F7F00B0F754 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B3201DDA18443F7F00B0F754 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B3201DDD18443F7F00B0F754 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		B3201DE61844405100B0F754 /* TUCachingNinePatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUCachingNinePatch.h; sourceTree = "<group>"; };
+		B3201DE71844405100B0F754 /* TUCachingNinePatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUCachingNinePatch.m; sourceTree = "<group>"; };
+		B3201DE81844405100B0F754 /* TUNinePatchCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUNinePatchCache.h; sourceTree = "<group>"; };
+		B3201DE91844405100B0F754 /* TUNinePatchCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUNinePatchCache.m; sourceTree = "<group>"; };
+		B3201DEB1844405100B0F754 /* TUNinePatchCachingCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUNinePatchCachingCategories.h; sourceTree = "<group>"; };
+		B3201DEC1844405100B0F754 /* TUNinePatchCachingCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUNinePatchCachingCategories.m; sourceTree = "<group>"; };
+		B3201DED1844405100B0F754 /* UIImage-TUNinePatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-TUNinePatch.h"; sourceTree = "<group>"; };
+		B3201DEE1844405100B0F754 /* UIImage-TUNinePatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage-TUNinePatch.m"; sourceTree = "<group>"; };
+		B3201DF01844405100B0F754 /* TUDebugLoggingAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUDebugLoggingAssistant.h; sourceTree = "<group>"; };
+		B3201DF11844405100B0F754 /* TUDebugLoggingAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUDebugLoggingAssistant.m; sourceTree = "<group>"; };
+		B3201DF31844405100B0F754 /* TUFullNinePatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUFullNinePatch.h; sourceTree = "<group>"; };
+		B3201DF41844405100B0F754 /* TUFullNinePatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUFullNinePatch.m; sourceTree = "<group>"; };
+		B3201DF51844405100B0F754 /* TUHorizontalNinePatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUHorizontalNinePatch.h; sourceTree = "<group>"; };
+		B3201DF61844405100B0F754 /* TUHorizontalNinePatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUHorizontalNinePatch.m; sourceTree = "<group>"; };
+		B3201DF71844405100B0F754 /* TUNinePatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUNinePatch.h; sourceTree = "<group>"; };
+		B3201DF81844405100B0F754 /* TUNinePatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUNinePatch.m; sourceTree = "<group>"; };
+		B3201DF91844405100B0F754 /* TUNinePatchProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUNinePatchProtocols.h; sourceTree = "<group>"; };
+		B3201DFA1844405100B0F754 /* TUVerticalNinePatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUVerticalNinePatch.h; sourceTree = "<group>"; };
+		B3201DFB1844405100B0F754 /* TUVerticalNinePatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUVerticalNinePatch.m; sourceTree = "<group>"; };
+		B3201E051844409000B0F754 /* test.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.9.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3201DBB18443F7F00B0F754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3201DC218443F7F00B0F754 /* UIKit.framework in Frameworks */,
+				B3201DC418443F7F00B0F754 /* Foundation.framework in Frameworks */,
+				B3201DC618443F7F00B0F754 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B308D8CC18446E1C004C5185 /* NinePngBaseView */ = {
+			isa = PBXGroup;
+			children = (
+				B308D8CD18446E1C004C5185 /* NPContentNinePatchDemoView.h */,
+				B308D8CE18446E1C004C5185 /* NPContentNinePatchDemoView.m */,
+				B308D8CF18446E1C004C5185 /* NPNinePatchDemoView.h */,
+				B308D8D018446E1C004C5185 /* NPNinePatchDemoView.m */,
+			);
+			path = NinePngBaseView;
+			sourceTree = "<group>";
+		};
+		B3201DB518443F7F00B0F754 = {
+			isa = PBXGroup;
+			children = (
+				B3201DE41844405100B0F754 /* NinePngLib */,
+				B3201DC718443F7F00B0F754 /* Lx_NinePng */,
+				B3201DC018443F7F00B0F754 /* Frameworks */,
+				B3201DBF18443F7F00B0F754 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3201DBF18443F7F00B0F754 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3201DBE18443F7F00B0F754 /* Lx_NinePng.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3201DC018443F7F00B0F754 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3201DC118443F7F00B0F754 /* UIKit.framework */,
+				B3201DC318443F7F00B0F754 /* Foundation.framework */,
+				B3201DC518443F7F00B0F754 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3201DC718443F7F00B0F754 /* Lx_NinePng */ = {
+			isa = PBXGroup;
+			children = (
+				B3201DD018443F7F00B0F754 /* AppDelegate.h */,
+				B3201DD118443F7F00B0F754 /* AppDelegate.m */,
+				B3201DD918443F7F00B0F754 /* ViewController.h */,
+				B3201DDA18443F7F00B0F754 /* ViewController.m */,
+				B3201DDC18443F7F00B0F754 /* ViewController.xib */,
+				B3201DC818443F7F00B0F754 /* Supporting Files */,
+			);
+			path = Lx_NinePng;
+			sourceTree = "<group>";
+		};
+		B3201DC818443F7F00B0F754 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B308D8FA18448B47004C5185 /* circle.png */,
+				B308D8D818447D9E004C5185 /* aaaa.png */,
+				B308D8D6184478D8004C5185 /* g.9.png */,
+				B3201E051844409000B0F754 /* test.9.png */,
+				B3201DC918443F7F00B0F754 /* Lx_NinePng-Info.plist */,
+				B3201DCA18443F7F00B0F754 /* InfoPlist.strings */,
+				B3201DCD18443F7F00B0F754 /* main.m */,
+				B3201DCF18443F7F00B0F754 /* Lx_NinePng-Prefix.pch */,
+				B3201DD318443F7F00B0F754 /* Default.png */,
+				B3201DD518443F7F00B0F754 /* Default@2x.png */,
+				B3201DD718443F7F00B0F754 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3201DE41844405100B0F754 /* NinePngLib */ = {
+			isa = PBXGroup;
+			children = (
+				B308D8D318446E5E004C5185 /* NinePatch.h */,
+				B308D8CC18446E1C004C5185 /* NinePngBaseView */,
+				B3201DE51844405100B0F754 /* caching */,
+				B3201DEA1844405100B0F754 /* Categories */,
+				B3201DEF1844405100B0F754 /* DebuggingUtilities */,
+				B3201DF21844405100B0F754 /* NinePahch */,
+			);
+			path = NinePngLib;
+			sourceTree = "<group>";
+		};
+		B3201DE51844405100B0F754 /* caching */ = {
+			isa = PBXGroup;
+			children = (
+				B3201DE61844405100B0F754 /* TUCachingNinePatch.h */,
+				B3201DE71844405100B0F754 /* TUCachingNinePatch.m */,
+				B3201DE81844405100B0F754 /* TUNinePatchCache.h */,
+				B3201DE91844405100B0F754 /* TUNinePatchCache.m */,
+			);
+			path = caching;
+			sourceTree = "<group>";
+		};
+		B3201DEA1844405100B0F754 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B3201DEB1844405100B0F754 /* TUNinePatchCachingCategories.h */,
+				B3201DEC1844405100B0F754 /* TUNinePatchCachingCategories.m */,
+				B3201DED1844405100B0F754 /* UIImage-TUNinePatch.h */,
+				B3201DEE1844405100B0F754 /* UIImage-TUNinePatch.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		B3201DEF1844405100B0F754 /* DebuggingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				B3201DF01844405100B0F754 /* TUDebugLoggingAssistant.h */,
+				B3201DF11844405100B0F754 /* TUDebugLoggingAssistant.m */,
+			);
+			path = DebuggingUtilities;
+			sourceTree = "<group>";
+		};
+		B3201DF21844405100B0F754 /* NinePahch */ = {
+			isa = PBXGroup;
+			children = (
+				B3201DF31844405100B0F754 /* TUFullNinePatch.h */,
+				B3201DF41844405100B0F754 /* TUFullNinePatch.m */,
+				B3201DF51844405100B0F754 /* TUHorizontalNinePatch.h */,
+				B3201DF61844405100B0F754 /* TUHorizontalNinePatch.m */,
+				B3201DF71844405100B0F754 /* TUNinePatch.h */,
+				B3201DF81844405100B0F754 /* TUNinePatch.m */,
+				B3201DF91844405100B0F754 /* TUNinePatchProtocols.h */,
+				B3201DFA1844405100B0F754 /* TUVerticalNinePatch.h */,
+				B3201DFB1844405100B0F754 /* TUVerticalNinePatch.m */,
+			);
+			path = NinePahch;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3201DBD18443F7F00B0F754 /* Lx_NinePng */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3201DE118443F7F00B0F754 /* Build configuration list for PBXNativeTarget "Lx_NinePng" */;
+			buildPhases = (
+				B3201DBA18443F7F00B0F754 /* Sources */,
+				B3201DBB18443F7F00B0F754 /* Frameworks */,
+				B3201DBC18443F7F00B0F754 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lx_NinePng;
+			productName = Lx_NinePng;
+			productReference = B3201DBE18443F7F00B0F754 /* Lx_NinePng.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3201DB618443F7F00B0F754 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Clover;
+			};
+			buildConfigurationList = B3201DB918443F7F00B0F754 /* Build configuration list for PBXProject "Lx_NinePng" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B3201DB518443F7F00B0F754;
+			productRefGroup = B3201DBF18443F7F00B0F754 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3201DBD18443F7F00B0F754 /* Lx_NinePng */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3201DBC18443F7F00B0F754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3201DCC18443F7F00B0F754 /* InfoPlist.strings in Resources */,
+				B3201DD418443F7F00B0F754 /* Default.png in Resources */,
+				B3201DD618443F7F00B0F754 /* Default@2x.png in Resources */,
+				B3201DD818443F7F00B0F754 /* Default-568h@2x.png in Resources */,
+				B3201DDE18443F7F00B0F754 /* ViewController.xib in Resources */,
+				B3201E061844409000B0F754 /* test.9.png in Resources */,
+				B308D8D7184478D9004C5185 /* g.9.png in Resources */,
+				B308D8D918447D9E004C5185 /* aaaa.png in Resources */,
+				B308D8FB18448B47004C5185 /* circle.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3201DBA18443F7F00B0F754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3201DCE18443F7F00B0F754 /* main.m in Sources */,
+				B3201DD218443F7F00B0F754 /* AppDelegate.m in Sources */,
+				B3201DDB18443F7F00B0F754 /* ViewController.m in Sources */,
+				B3201DFC1844405100B0F754 /* TUCachingNinePatch.m in Sources */,
+				B3201DFD1844405100B0F754 /* TUNinePatchCache.m in Sources */,
+				B3201DFE1844405100B0F754 /* TUNinePatchCachingCategories.m in Sources */,
+				B3201DFF1844405100B0F754 /* UIImage-TUNinePatch.m in Sources */,
+				B3201E001844405100B0F754 /* TUDebugLoggingAssistant.m in Sources */,
+				B3201E011844405100B0F754 /* TUFullNinePatch.m in Sources */,
+				B3201E021844405100B0F754 /* TUHorizontalNinePatch.m in Sources */,
+				B3201E031844405100B0F754 /* TUNinePatch.m in Sources */,
+				B3201E041844405100B0F754 /* TUVerticalNinePatch.m in Sources */,
+				B308D8D118446E1C004C5185 /* NPContentNinePatchDemoView.m in Sources */,
+				B308D8D218446E1C004C5185 /* NPNinePatchDemoView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B3201DCA18443F7F00B0F754 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3201DCB18443F7F00B0F754 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B3201DDC18443F7F00B0F754 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3201DDD18443F7F00B0F754 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3201DDF18443F7F00B0F754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B3201DE018443F7F00B0F754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3201DE218443F7F00B0F754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lx_NinePng/Lx_NinePng-Prefix.pch";
+				INFOPLIST_FILE = "Lx_NinePng/Lx_NinePng-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B3201DE318443F7F00B0F754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lx_NinePng/Lx_NinePng-Prefix.pch";
+				INFOPLIST_FILE = "Lx_NinePng/Lx_NinePng-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3201DB918443F7F00B0F754 /* Build configuration list for PBXProject "Lx_NinePng" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3201DDF18443F7F00B0F754 /* Debug */,
+				B3201DE018443F7F00B0F754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3201DE118443F7F00B0F754 /* Build configuration list for PBXNativeTarget "Lx_NinePng" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3201DE218443F7F00B0F754 /* Debug */,
+				B3201DE318443F7F00B0F754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3201DB618443F7F00B0F754 /* Project object */;
+}
