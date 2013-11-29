@@ -28,11 +28,18 @@
 #define KF_FL(index) [NSString stringWithFormat:@"%@%@",@"fl",index]
 #define KF_WEATHER(index) [NSString stringWithFormat:@"%@%@",@"weather",index]
 
-#define KF_TEMPF_LOW(index) [NSString stringWithFormat:@"%@%@",@"tempF",index]
-#define KF_TEMPF_HEIGHT(index) [NSString stringWithFormat:@"%@%@",@"tempF",index]
-#define KF_TEMPC_LOW(index) [NSString stringWithFormat:@"%@%@",@"temp",index]
-#define KF_TEMPC_HEIGHT(index) [NSString stringWithFormat:@"%@%@",@"temp",index]
+#define KF_TEMPF(index) [NSString stringWithFormat:@"%@%@",@"tempF",index]
+#define KF_TEMPC(index) [NSString stringWithFormat:@"%@%@",@"temp",index]
+
 #define KF_IMAGE_TITLE_DAY(index) [NSString stringWithFormat:@"%@%@",@"img_title",index]
 #define KF_IMAGE_TITLE_NIGHT(index) [NSString stringWithFormat:@"%@%@",@"img_title",index]
 #define KF_IMAGE_DAY(index) [NSString stringWithFormat:@"%@%@",@"img",index]
 #define KF_IMAGE_NIGHT(index) [NSString stringWithFormat:@"%@%@",@"img",index]
+
+#define KF_FORCAST_DAY(index) [NSString stringWithFormat:@"%@%d",@"ForcastDay",index]
+
+#define KF_INDEX @"index"
+#define KF_INDEXD @"index_d"
+
+#define KF_INDEX48 @"index48"
+#define KF_INDEX48D @"index48_d"

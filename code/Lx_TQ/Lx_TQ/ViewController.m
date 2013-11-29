@@ -19,6 +19,8 @@
 #import "BDayView.h"
 
 #import "UIView+Lx_UIView.h"
+
+const int dayViewTag = 0x100;
 @interface ViewController ()
 
 
@@ -27,12 +29,7 @@
 
 @property(nonatomic,strong)IBOutlet UIView*m_ContentView;
 @property(nonatomic,strong)IBOutlet UIView*m_OneDayView;
-@property(nonatomic,strong)IBOutlet UIView*m_FrocastBackgroundView;
-@property(nonatomic,strong)IBOutlet UIView*m_dayBackgroundView;
-@property(nonatomic,strong)IBOutlet UIView*m_nightBackgroundView;
 
-@property(nonatomic,strong)IBOutlet UIImageView*m_dayIconImageView;
-@property(nonatomic,strong)IBOutlet UIImageView*m_nightIconImageView;
 @end
 
 @implementation ViewController
@@ -40,9 +37,6 @@
 @synthesize m_CityName ,m_SK_PM;
 @synthesize m_ContentView;
 @synthesize m_OneDayView;
-@synthesize m_FrocastBackgroundView,m_dayBackgroundView,m_nightBackgroundView;
-
-@synthesize m_dayIconImageView,m_nightIconImageView;
 
 @synthesize m_ForcastScrollView;
 
@@ -75,23 +69,20 @@
     [self.m_ContentView addSubview:self.m_SK_PM];
     
     //[m_ContentView setLayerRadius:0.0 borderWidth:1.0 borderColor:UICOLOR(31,86,14)];
-    [m_FrocastBackgroundView setLayerRadius:0.0 borderWidth:1.0 borderColor:UICOLOR(31,86,14)];
-    [m_dayBackgroundView setLayerRadius:0.0 borderWidth:1.0 borderColor:UICOLOR(31,86,14)];
-    [m_nightBackgroundView setLayerRadius:0.0 borderWidth:1.0 borderColor:UICOLOR(31,86,14)];
-    [m_dayIconImageView setLayerRadius:0.0 borderWidth:1.0 borderColor:UICOLOR(31,86,14)];
-    [m_nightIconImageView setLayerRadius:0.0 borderWidth:1.0 borderColor:UICOLOR(31,86,14)];
     
     for (int i = 0; i<6; i++)
     {
         if (i<2)
         {
             ADayView* m_aDayView = [[[NSBundle mainBundle] loadNibNamed:@"ADayView" owner:self options:nil] objectAtIndex:0];
+            m_aDayView.tag = dayViewTag+i;
             m_aDayView.frame = CGRectMake(i*306, 0, 306, 356);
             [self.m_ForcastScrollView addSubview:m_aDayView];
         }
         else
         {
             BDayView* m_bDayView = [[[NSBundle mainBundle] loadNibNamed:@"BDayView" owner:self options:nil] objectAtIndex:0];
+            m_bDayView.tag = dayViewTag+i;
             m_bDayView.frame = CGRectMake(i*306, 0, 306, 356);
             [self.m_ForcastScrollView addSubview:m_bDayView];
             
@@ -174,15 +165,57 @@
          for (int i = 1;i<=6;i++)
          {
              NSString*index = [NSString stringWithFormat:@"%d",i];
-             NSString*index_2x = [NSString stringWithFormat:@"%d",2i];
+             NSString*index_2x = [NSString stringWithFormat:@"%d",2*i];
              NSMutableDictionary*oneDayDic = [[NSMutableDictionary alloc] init];
              
              [oneDayDic setObject:[tempDic objectForKey:KF_FL(index)] forKey:KF_FL(@"")];
              [oneDayDic setObject:[tempDic objectForKey:KF_WIND(index)] forKey:KF_WIND(@"")];
-             [oneDayDic setObject:[tempDic objectForKey:KF_FL(index)] forKey:KF_FL(@"")];
-             [oneDayDic setObject:[tempDic objectForKey:KF_FL(index)] forKey:KF_FL(@"")];
-             [oneDayDic setObject:[tempDic objectForKey:KF_FL(index)] forKey:KF_FL(@"")];
+             [oneDayDic setObject:[tempDic objectForKey:KF_WEATHER(index)] forKey:KF_WEATHER(@"")];
+             [oneDayDic setObject:[tempDic objectForKey:KF_IMAGE_TITLE_DAY(index)] forKey:KF_IMAGE_TITLE_DAY(@"")];
+             [oneDayDic setObject:[tempDic objectForKey:KF_IMAGE_TITLE_NIGHT(index_2x)] forKey:KF_IMAGE_TITLE_NIGHT(@"")];
+             
+             [oneDayDic setObject:[tempDic objectForKey:KF_IMAGE_DAY(index)] forKey:KF_IMAGE_DAY(@"")];
+             [oneDayDic setObject:[tempDic objectForKey:KF_IMAGE_NIGHT(index_2x)] forKey:KF_IMAGE_NIGHT(@"")];
+             /*摄氏度*/
+             NSMutableString *tempC = [[NSMutableString alloc] initWithString:[tempDic objectForKey:KF_TEMPC(index)]];
+             [tempC replaceOccurrencesOfString:@"℃" withString:@"" options:NSLiteralSearch range:NSMakeRange(0, [tempC length])];
+             NSArray*tempCArr = [tempC componentsSeparatedByString:@"~"];
+             if ([tempCArr count]==2)
+             {
+                 [oneDayDic setObject:[tempCArr objectAtIndex:0] forKey:KF_TEMPC(@"CL")];
+                 [oneDayDic setObject:[tempCArr objectAtIndex:1] forKey:KF_TEMPC(@"CH")];
+             }
+             /*华氏度*/
+             NSMutableString *tempF = [[NSMutableString alloc] initWithString:[tempDic objectForKey:KF_TEMPF(index)]];
+             [tempF replaceOccurrencesOfString:@"℉" withString:@"" options:NSLiteralSearch range:NSMakeRange(0, [tempF length])];
+             NSArray*tempFArr = [tempF componentsSeparatedByString:@"~"];
+             if ([tempFArr count]==2)
+             {
+                 [oneDayDic setObject:[tempFArr objectAtIndex:0] forKey:KF_TEMPF(@"L")];
+                 [oneDayDic setObject:[tempFArr objectAtIndex:1] forKey:KF_TEMPF(@"H")];
+             }
+             if (i==1)
+             {
+                 [oneDayDic setObject:[tempDic objectForKey:KF_INDEX] forKey:KF_INDEX];
+                 [oneDayDic setObject:[tempDic objectForKey:KF_INDEXD] forKey:KF_INDEXD];
+             }
+             else if (i==2)
+             {
+                 [oneDayDic setObject:[tempDic objectForKey:KF_INDEX48] forKey:KF_INDEX];
+                 [oneDayDic setObject:[tempDic objectForKey:KF_INDEX48D] forKey:KF_INDEXD];
+             }
+             
+             [m_ForcastDictionary setObject:oneDayDic forKey:[NSString stringWithFormat:KF_FORCAST_DAY(i)]];
          }
+         
+         
+         ADayView*day1View = (ADayView*)[m_ForcastScrollView viewWithTag:dayViewTag+0];
+         [day1View refreshView:[m_ForcastDictionary objectForKey:KF_FORCAST_DAY(1)]];
+
+         ADayView*day2View = (ADayView*)[m_ForcastScrollView viewWithTag:dayViewTag+1];
+         [day2View refreshView:[m_ForcastDictionary objectForKey:KF_FORCAST_DAY(2)]];
+
+         
      }];
     [request startAsynchronous];
 }
@@ -237,6 +270,8 @@
 {
     NSUInteger section = [indexPath section];
     NSUInteger row = [indexPath row];
+    
+    NSLog(@"==%@",m_ForcastDictionary);
 
 }
 #pragma mark -
@@ -244,6 +279,7 @@
 
 - (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
 {
+    
 //    self.searchDisplayController.searchResultsTableView.backgroundColor=UICOLOR(31,86,14);
     self.searchDisplayController.searchResultsTableView.separatorStyle=UITableViewCellSeparatorStyleNone;
     [self SearchDataBySearchChar:searchString setButtonindex:self.searchDisplayController.searchBar.selectedScopeButtonIndex];
@@ -253,6 +289,7 @@
 - (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchScope:(NSInteger)searchOption
 {
     NSString*aSearchChar=self.searchDisplayController.searchBar.text;
+     
     [self SearchDataBySearchChar:aSearchChar setButtonindex:searchOption];
     return YES;
 }
