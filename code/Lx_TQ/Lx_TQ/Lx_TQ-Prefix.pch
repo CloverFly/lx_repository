@@ -20,3 +20,19 @@
 
 
 #define UICOLOR(r,g,b) [UIColor  colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1.0f]
+
+
+
+
+#define KF_WIND(index) [NSString stringWithFormat:@"%@%@",@"wind",index]
+#define KF_FL(index) [NSString stringWithFormat:@"%@%@",@"fl",index]
+#define KF_WEATHER(index) [NSString stringWithFormat:@"%@%@",@"weather",index]
+
+#define KF_TEMPF_LOW(index) [NSString stringWithFormat:@"%@%@",@"tempF",index]
+#define KF_TEMPF_HEIGHT(index) [NSString stringWithFormat:@"%@%@",@"tempF",index]
+#define KF_TEMPC_LOW(index) [NSString stringWithFormat:@"%@%@",@"temp",index]
+#define KF_TEMPC_HEIGHT(index) [NSString stringWithFormat:@"%@%@",@"temp",index]
+#define KF_IMAGE_TITLE_DAY(index) [NSString stringWithFormat:@"%@%@",@"img_title",index]
+#define KF_IMAGE_TITLE_NIGHT(index) [NSString stringWithFormat:@"%@%@",@"img_title",index]
+#define KF_IMAGE_DAY(index) [NSString stringWithFormat:@"%@%@",@"img",index]
+#define KF_IMAGE_NIGHT(index) [NSString stringWithFormat:@"%@%@",@"img",index]

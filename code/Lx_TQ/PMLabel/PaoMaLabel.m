@@ -26,7 +26,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        appendStr = @"   ";
+        appendStr = @"      ";
     }
     return self;
 }

@@ -50,6 +50,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    m_ForcastDictionary = [[NSMutableDictionary alloc] init];
     // Step 2 - Register for motion event:
 	[self addMotionRecognizerWithAction:@selector(motionWasRecognized:)];
 
@@ -141,7 +142,7 @@
          m_CityName.text = [NSString stringWithFormat:@"%@【%@发布】",[tempDic objectForKey:@"city"],[tempDic objectForKey:@"time"]];
 
          
-         m_SK_PM.text = [NSString stringWithFormat:@"【%@%@天气实况】气温,%@℃；湿度，%@；%@，%@，风速，%@m/s            ",
+         m_SK_PM.text = [NSString stringWithFormat:@"【%@%@天气实况】气温,%@℃；湿度，%@；%@，%@，风速，%@m/s",
                          [tempDic objectForKey:@"city"],
                          [tempDic objectForKey:@"time"],
                          [tempDic objectForKey:@"temp"],
@@ -149,15 +150,7 @@
                          [tempDic objectForKey:@"WD"],
                          [tempDic objectForKey:@"WS"],
                          [tempDic objectForKey:@"WSE"]];
-         //self.m_SK_PM.text = @"这是一个子欧弟滚动的这是一子欧弟滚动的这是一   ";
-         NSLog(@"<【%@%@天气实况】气温,%@℃；湿度，%@；%@，%@，风速，%@m/s            >",
-               [tempDic objectForKey:@"city"],
-               [tempDic objectForKey:@"time"],
-               [tempDic objectForKey:@"temp"],
-               [tempDic objectForKey:@"SD"],
-               [tempDic objectForKey:@"WD"],
-               [tempDic objectForKey:@"WS"],
-               [tempDic objectForKey:@"WSE"]);
+
          
      }];
     [request startAsynchronous];
@@ -177,6 +170,18 @@
          for (NSString*key in [tempDic allKeys])
          {
              //NSLog(@"%@:%@",key,[tempDic objectForKey:key]);
+         }
+         for (int i = 1;i<=6;i++)
+         {
+             NSString*index = [NSString stringWithFormat:@"%d",i];
+             NSString*index_2x = [NSString stringWithFormat:@"%d",2i];
+             NSMutableDictionary*oneDayDic = [[NSMutableDictionary alloc] init];
+             
+             [oneDayDic setObject:[tempDic objectForKey:KF_FL(index)] forKey:KF_FL(@"")];
+             [oneDayDic setObject:[tempDic objectForKey:KF_WIND(index)] forKey:KF_WIND(@"")];
+             [oneDayDic setObject:[tempDic objectForKey:KF_FL(index)] forKey:KF_FL(@"")];
+             [oneDayDic setObject:[tempDic objectForKey:KF_FL(index)] forKey:KF_FL(@"")];
+             [oneDayDic setObject:[tempDic objectForKey:KF_FL(index)] forKey:KF_FL(@"")];
          }
      }];
     [request startAsynchronous];

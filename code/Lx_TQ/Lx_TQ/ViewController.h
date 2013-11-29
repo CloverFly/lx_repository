@@ -10,9 +10,13 @@
 
 @interface ViewController : UIViewController
 <UITableViewDelegate, UITableViewDataSource,UISearchDisplayDelegate, UISearchBarDelegate>
+{
+    __block NSMutableDictionary*m_ForcastDictionary;
+}
 
 -(IBAction)updaWeather:(UIButton*)sender;
 
 @property(nonatomic,strong)IBOutlet UIScrollView*m_ForcastScrollView;
+
 
 @end
