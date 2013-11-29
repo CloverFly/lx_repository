@@ -13,6 +13,6 @@
 
 -(IBAction)updaWeather:(UIButton*)sender;
 
-
+@property(nonatomic,strong)IBOutlet UIScrollView*m_ForcastScrollView;
 
 @end

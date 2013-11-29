@@ -17,3 +17,6 @@
 #define API_SERVERSE @"http://www.weather.com.cn/"
 #define API_WEATHER_REALTIME(cityId) [NSString stringWithFormat:@"%@data/sk/%@.html",API_SERVERSE,cityId]
 #define API_WEATHER_FORCAST(cityId)  [NSString stringWithFormat:@"http://m.weather.com.cn/data/%@.html",cityId]
+
+
+#define UICOLOR(r,g,b) [UIColor  colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1.0f]
