@@ -22,6 +22,18 @@
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+    
+    
+    NSDate*date = [NSDate getDateWithDateString:@"2014-01-01" formatString:Lx_DateFormat];
+    
+    NSLog(@"%@[%@]年%@%@",
+          [date getChineseYearWithDate],
+          [date getChineseZodiacWithDate],
+          [date getChineseMonthWithDate],
+          [date getChineseDayWithDate]);
+    
+    
     return YES;
 }
 

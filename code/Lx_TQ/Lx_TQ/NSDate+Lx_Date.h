@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#define Lx_DateFormat @"yyyy-MM-dd HH:mm:ss"
+#define Lx_DateFormat @"yyyy-MM-dd"
 #define Lx_TimeFormat @"yyyy-MM-dd HH:mm:ss"
 
 @interface NSDate (Lx_Date)
