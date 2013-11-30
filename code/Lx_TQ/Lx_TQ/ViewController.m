@@ -163,7 +163,7 @@ const int dayViewTag = 0x100;
          {
              //NSLog(@"%@:%@",key,[tempDic objectForKey:key]);
          }
-         NSDate*dateY = [NSDate getDateWithDateString:[tempDic objectForKey:KF_DATE] formatString:<#(NSString *)#>]
+         NSDate*dateY = [NSDate getDateWithDateString:[tempDic ob] formatString:<#(NSString *)#>]
          for (int i = 1;i<=6;i++)
          {
              NSString*indexSingle = [NSString stringWithFormat:@"%d",i];
