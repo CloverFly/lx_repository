@@ -24,6 +24,17 @@
 @property(nonatomic,strong)IBOutlet UILabel*m_NightWeatherContion;
 
 
+@property(nonatomic,strong)IBOutlet UILabel*m_Year;
+@property(nonatomic,strong)IBOutlet UILabel*m_ChineseYear;
+@property(nonatomic,strong)IBOutlet UILabel*m_ChineseDate;
+@property(nonatomic,strong)IBOutlet UILabel*m_EnglishMonth;
+@property(nonatomic,strong)IBOutlet UILabel*m_DayNum;
+@property(nonatomic,strong)IBOutlet UILabel*m_GZ_Month;
+@property(nonatomic,strong)IBOutlet UILabel*m_EnglishWeek;
+@property(nonatomic,strong)IBOutlet UILabel*m_ChineseDay;
+@property(nonatomic,strong)IBOutlet UILabel*m_CN_week;
+
+
 @property(nonatomic,strong)IBOutlet UITextView*m_Index;
 
 @property(nonatomic,strong)NSDictionary*m_forcastDic;

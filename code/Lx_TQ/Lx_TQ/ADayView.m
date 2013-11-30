@@ -8,6 +8,7 @@
 
 #import "ADayView.h"
 #import "UIView+Lx_UIView.h"
+#import "NSDate+Lx_Date.h"
 @implementation ADayView
 @synthesize m_FrocastBackgroundView,m_dayBackgroundView,m_nightBackgroundView;
 
@@ -18,6 +19,7 @@
 
 @synthesize m_forcastDic;
 
+@synthesize m_Year,m_ChineseYear,m_ChineseDate,m_EnglishMonth,m_DayNum,m_GZ_Month,m_EnglishWeek,m_ChineseDay,m_CN_week;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -64,6 +66,5 @@
     [m_Wind setLayerRadius:0.0 borderWidth:1.0 borderColor:UICOLOR(31,86,14)];
 //    [m_nightIconImageView setLayerRadius:0.0 borderWidth:1.0 borderColor:UICOLOR(31,86,14)];
 
-    
 }
 @end

@@ -23,17 +23,18 @@
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     
-    
-    
-    NSDate*date = [NSDate getDateWithDateString:@"2014-01-01" formatString:Lx_DateFormat];
-    
-    NSLog(@"%@[%@]年%@%@",
-          [date getChineseYearWithDate],
-          [date getChineseZodiacWithDate],
-          [date getChineseMonthWithDate],
-          [date getChineseDayWithDate]);
-    
-    
+
+    for (int i=13; i<20; i++)
+    {
+        NSDate*date = [NSDate getDateWithDateString:[NSString stringWithFormat:@"2014-01-%d",i] formatString:Lx_DateFormat];
+        
+        NSLog(@"%@[%@]年%@%@，%@",
+              [date getChineseYear],
+              [date getChineseZodiac],
+              [date getChineseMonthByType:EN_MONTHSHORT],
+              [date getChineseDay],
+              [date getWeekDayByType:EN_WEEK]);
+    }
     return YES;
 }
 

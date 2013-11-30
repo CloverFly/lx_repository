@@ -41,3 +41,5 @@
 
 #define KF_INDEX48 @"index48"
 #define KF_INDEX48D @"index48_d"
+
+#define KF_DATE @"date_y"

@@ -19,6 +19,7 @@
 #import "BDayView.h"
 
 #import "UIView+Lx_UIView.h"
+#import "NSDate+Lx_Date.h"
 
 const int dayViewTag = 0x100;
 @interface ViewController ()
@@ -162,6 +163,7 @@ const int dayViewTag = 0x100;
          {
              //NSLog(@"%@:%@",key,[tempDic objectForKey:key]);
          }
+         NSDate*dateY = [NSDate getDateWithDateString:[tempDic objectForKey:KF_DATE] formatString:<#(NSString *)#>]
          for (int i = 1;i<=6;i++)
          {
              NSString*indexSingle = [NSString stringWithFormat:@"%d",i];
@@ -169,9 +171,11 @@ const int dayViewTag = 0x100;
              NSString*index_2x = [NSString stringWithFormat:@"%d",2*(i-1)+2];
              NSMutableDictionary*oneDayDic = [[NSMutableDictionary alloc] init];
              
+             [oneDayDic setObject:[] forKey:<#(id<NSCopying>)#>]
              [oneDayDic setObject:[tempDic objectForKey:KF_FL(indexSingle)] forKey:KF_FL(@"")];
              [oneDayDic setObject:[tempDic objectForKey:KF_WIND(indexSingle)] forKey:KF_WIND(@"")];
              [oneDayDic setObject:[tempDic objectForKey:KF_WEATHER(indexSingle)] forKey:KF_WEATHER(@"")];
+             
              
              
              [oneDayDic setObject:[tempDic objectForKey:KF_IMAGE_TITLE(index)] forKey:KF_IMAGE_TITLE(@"_Day")];
