@@ -31,10 +31,8 @@
 #define KF_TEMPF(index) [NSString stringWithFormat:@"%@%@",@"tempF",index]
 #define KF_TEMPC(index) [NSString stringWithFormat:@"%@%@",@"temp",index]
 
-#define KF_IMAGE_TITLE_DAY(index) [NSString stringWithFormat:@"%@%@",@"img_title",index]
-#define KF_IMAGE_TITLE_NIGHT(index) [NSString stringWithFormat:@"%@%@",@"img_title",index]
-#define KF_IMAGE_DAY(index) [NSString stringWithFormat:@"%@%@",@"img",index]
-#define KF_IMAGE_NIGHT(index) [NSString stringWithFormat:@"%@%@",@"img",index]
+#define KF_IMAGE_TITLE(index) [NSString stringWithFormat:@"%@%@",@"img_title",index]
+#define KF_IMAGE(index) [NSString stringWithFormat:@"%@%@",@"img",index]
 
 #define KF_FORCAST_DAY(index) [NSString stringWithFormat:@"%@%d",@"ForcastDay",index]
 

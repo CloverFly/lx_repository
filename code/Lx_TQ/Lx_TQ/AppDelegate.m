@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "CPMotionRecognizingWindow.h"
 #import "ViewController.h"
-
+#import "NSDate+Lx_Date.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

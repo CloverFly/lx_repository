@@ -164,35 +164,38 @@ const int dayViewTag = 0x100;
          }
          for (int i = 1;i<=6;i++)
          {
-             NSString*index = [NSString stringWithFormat:@"%d",i];
-             NSString*index_2x = [NSString stringWithFormat:@"%d",2*i];
+             NSString*indexSingle = [NSString stringWithFormat:@"%d",i];
+             NSString*index = [NSString stringWithFormat:@"%d",2*(i-1)+1];
+             NSString*index_2x = [NSString stringWithFormat:@"%d",2*(i-1)+2];
              NSMutableDictionary*oneDayDic = [[NSMutableDictionary alloc] init];
              
-             [oneDayDic setObject:[tempDic objectForKey:KF_FL(index)] forKey:KF_FL(@"")];
-             [oneDayDic setObject:[tempDic objectForKey:KF_WIND(index)] forKey:KF_WIND(@"")];
-             [oneDayDic setObject:[tempDic objectForKey:KF_WEATHER(index)] forKey:KF_WEATHER(@"")];
-             [oneDayDic setObject:[tempDic objectForKey:KF_IMAGE_TITLE_DAY(index)] forKey:KF_IMAGE_TITLE_DAY(@"")];
-             [oneDayDic setObject:[tempDic objectForKey:KF_IMAGE_TITLE_NIGHT(index_2x)] forKey:KF_IMAGE_TITLE_NIGHT(@"")];
+             [oneDayDic setObject:[tempDic objectForKey:KF_FL(indexSingle)] forKey:KF_FL(@"")];
+             [oneDayDic setObject:[tempDic objectForKey:KF_WIND(indexSingle)] forKey:KF_WIND(@"")];
+             [oneDayDic setObject:[tempDic objectForKey:KF_WEATHER(indexSingle)] forKey:KF_WEATHER(@"")];
              
-             [oneDayDic setObject:[tempDic objectForKey:KF_IMAGE_DAY(index)] forKey:KF_IMAGE_DAY(@"")];
-             [oneDayDic setObject:[tempDic objectForKey:KF_IMAGE_NIGHT(index_2x)] forKey:KF_IMAGE_NIGHT(@"")];
+             
+             [oneDayDic setObject:[tempDic objectForKey:KF_IMAGE_TITLE(index)] forKey:KF_IMAGE_TITLE(@"_Day")];
+             [oneDayDic setObject:[tempDic objectForKey:KF_IMAGE_TITLE(index_2x)] forKey:KF_IMAGE_TITLE(@"_Night")];
+             
+             [oneDayDic setObject:[tempDic objectForKey:KF_IMAGE(index)] forKey:KF_IMAGE(@"_Day")];
+             [oneDayDic setObject:[tempDic objectForKey:KF_IMAGE(index_2x)] forKey:KF_IMAGE(@"_Night")];
              /*摄氏度*/
-             NSMutableString *tempC = [[NSMutableString alloc] initWithString:[tempDic objectForKey:KF_TEMPC(index)]];
+             NSMutableString *tempC = [[NSMutableString alloc] initWithString:[tempDic objectForKey:KF_TEMPC(indexSingle)]];
              [tempC replaceOccurrencesOfString:@"℃" withString:@"" options:NSLiteralSearch range:NSMakeRange(0, [tempC length])];
              NSArray*tempCArr = [tempC componentsSeparatedByString:@"~"];
              if ([tempCArr count]==2)
              {
-                 [oneDayDic setObject:[tempCArr objectAtIndex:0] forKey:KF_TEMPC(@"CL")];
-                 [oneDayDic setObject:[tempCArr objectAtIndex:1] forKey:KF_TEMPC(@"CH")];
+                 [oneDayDic setObject:[tempCArr objectAtIndex:1] forKey:KF_TEMPC(@"CL")];
+                 [oneDayDic setObject:[tempCArr objectAtIndex:0] forKey:KF_TEMPC(@"CH")];
              }
              /*华氏度*/
-             NSMutableString *tempF = [[NSMutableString alloc] initWithString:[tempDic objectForKey:KF_TEMPF(index)]];
+             NSMutableString *tempF = [[NSMutableString alloc] initWithString:[tempDic objectForKey:KF_TEMPF(indexSingle)]];
              [tempF replaceOccurrencesOfString:@"℉" withString:@"" options:NSLiteralSearch range:NSMakeRange(0, [tempF length])];
              NSArray*tempFArr = [tempF componentsSeparatedByString:@"~"];
              if ([tempFArr count]==2)
              {
-                 [oneDayDic setObject:[tempFArr objectAtIndex:0] forKey:KF_TEMPF(@"L")];
-                 [oneDayDic setObject:[tempFArr objectAtIndex:1] forKey:KF_TEMPF(@"H")];
+                 [oneDayDic setObject:[tempFArr objectAtIndex:1] forKey:KF_TEMPF(@"L")];
+                 [oneDayDic setObject:[tempFArr objectAtIndex:0] forKey:KF_TEMPF(@"H")];
              }
              if (i==1)
              {

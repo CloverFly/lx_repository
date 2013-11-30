@@ -19,6 +19,11 @@
 @property(nonatomic,strong)IBOutlet UILabel*m_tempCL;
 @property(nonatomic,strong)IBOutlet UILabel*m_tempCH;
 
+@property(nonatomic,strong)IBOutlet UILabel*m_Wind;
+@property(nonatomic,strong)IBOutlet UILabel*m_DayWeatherContion;
+@property(nonatomic,strong)IBOutlet UILabel*m_NightWeatherContion;
+
+
 @property(nonatomic,strong)IBOutlet UITextView*m_Index;
 
 @property(nonatomic,strong)NSDictionary*m_forcastDic;

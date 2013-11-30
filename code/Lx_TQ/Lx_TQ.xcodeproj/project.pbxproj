@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3093EF91849AA0300844587 /* NSDate+Lx_Date.m in Sources */ = {isa = PBXBuildFile; fileRef = B3093EF81849AA0300844587 /* NSDate+Lx_Date.m */; };
 		B30F9C0318483F8A001AE96C /* PaoMaLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F9C0218483F8A001AE96C /* PaoMaLabel.m */; };
 		B30F9C0518486172001AE96C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30F9C0418486172001AE96C /* QuartzCore.framework */; };
 		B30F9C471848682D001AE96C /* icon_weather_day_0.png in Resources */ = {isa = PBXBuildFile; fileRef = B30F9C071848682D001AE96C /* icon_weather_day_0.png */; };
@@ -106,6 +107,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B3093EF71849AA0300844587 /* NSDate+Lx_Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Lx_Date.h"; sourceTree = "<group>"; };
+		B3093EF81849AA0300844587 /* NSDate+Lx_Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Lx_Date.m"; sourceTree = "<group>"; };
 		B30F9C0118483F8A001AE96C /* PaoMaLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaoMaLabel.h; sourceTree = "<group>"; };
 		B30F9C0218483F8A001AE96C /* PaoMaLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaoMaLabel.m; sourceTree = "<group>"; };
 		B30F9C0418486172001AE96C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -389,6 +392,8 @@
 				B30F9C8D18488597001AE96C /* BDayView.h */,
 				B30F9C8E18488597001AE96C /* BDayView.m */,
 				B30F9C92184885AE001AE96C /* BDayView.xib */,
+				B3093EF71849AA0300844587 /* NSDate+Lx_Date.h */,
+				B3093EF81849AA0300844587 /* NSDate+Lx_Date.m */,
 			);
 			path = Lx_TQ;
 			sourceTree = "<group>";
@@ -569,6 +574,7 @@
 				B30F9C8F18488598001AE96C /* BDayView.m in Sources */,
 				B30F9C9918488EE7001AE96C /* CPMotionRecognizingWindow.m in Sources */,
 				B30F9C9A18488EE7001AE96C /* UIResponder+MotionRecognizers.m in Sources */,
+				B3093EF91849AA0300844587 /* NSDate+Lx_Date.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
