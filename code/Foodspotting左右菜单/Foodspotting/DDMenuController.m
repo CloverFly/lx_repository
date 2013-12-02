@@ -25,6 +25,9 @@
 //
 
 #import "DDMenuController.h"
+#import <QuartzCore/QuartzCore.h>
+#import "CATransform3DPerspect.h"
+
 
 #define kMenuFullWidth 320.0f
 #define kMenuDisplayedWidth 280.0f
@@ -473,6 +476,9 @@
 }
 
 - (void)showLeftController:(BOOL)animated {
+    
+ 
+    
     if (!_menuFlags.canShowLeft) return;
     
     if (_right && _right.view.superview) {

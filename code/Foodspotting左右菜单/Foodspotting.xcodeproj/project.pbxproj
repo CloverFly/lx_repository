@@ -45,6 +45,7 @@
 		36B4FCF115E249DB00D1F09A /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B4FCEF15E249DA00D1F09A /* ThreeViewController.m */; };
 		36B4FCF215E249DB00D1F09A /* ThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36B4FCF015E249DB00D1F09A /* ThreeViewController.xib */; };
 		36B4FCF415E24A1500D1F09A /* zxy2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 36B4FCF315E24A1500D1F09A /* zxy2.jpeg */; };
+		B360F25E184C337B005D95BA /* CATransform3DPerspect.m in Sources */ = {isa = PBXBuildFile; fileRef = B360F25D184C337B005D95BA /* CATransform3DPerspect.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,8 @@
 		36B4FCEF15E249DA00D1F09A /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
 		36B4FCF015E249DB00D1F09A /* ThreeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreeViewController.xib; sourceTree = "<group>"; };
 		36B4FCF315E24A1500D1F09A /* zxy2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zxy2.jpeg; sourceTree = "<group>"; };
+		B360F25D184C337B005D95BA /* CATransform3DPerspect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransform3DPerspect.m; sourceTree = "<group>"; };
+		B360F25F184C3381005D95BA /* CATransform3DPerspect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransform3DPerspect.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +258,8 @@
 		36B4FCE615E2392D00D1F09A /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				B360F25F184C3381005D95BA /* CATransform3DPerspect.h */,
+				B360F25D184C337B005D95BA /* CATransform3DPerspect.m */,
 				36B4FCE715E239EF00D1F09A /* DDMenuController.h */,
 				36B4FCE815E239EF00D1F09A /* DDMenuController.m */,
 			);
@@ -353,6 +358,7 @@
 				36B4FCD815E2311100D1F09A /* MeunViewController.m in Sources */,
 				36B4FCE915E239EF00D1F09A /* DDMenuController.m in Sources */,
 				36B4FCF115E249DB00D1F09A /* ThreeViewController.m in Sources */,
+				B360F25E184C337B005D95BA /* CATransform3DPerspect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
