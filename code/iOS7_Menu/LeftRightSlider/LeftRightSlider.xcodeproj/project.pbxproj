@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B360F261184C902A005D95BA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B360F260184C902A005D95BA /* Default-568h@2x.png */; };
 		D826CFD918450F7300C5E495 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D826CFD818450F7300C5E495 /* Foundation.framework */; };
 		D826CFDB18450F7300C5E495 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D826CFDA18450F7300C5E495 /* CoreGraphics.framework */; };
 		D826CFDD18450F7300C5E495 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D826CFDC18450F7300C5E495 /* UIKit.framework */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B360F260184C902A005D95BA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D826CFD518450F7300C5E495 /* LeftRightSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeftRightSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D826CFD818450F7300C5E495 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D826CFDA18450F7300C5E495 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -101,6 +103,7 @@
 		D826CFCC18450F7300C5E495 = {
 			isa = PBXGroup;
 			children = (
+				B360F260184C902A005D95BA /* Default-568h@2x.png */,
 				D826CFDE18450F7300C5E495 /* LeftRightSlider */,
 				D826CFF718450F7300C5E495 /* LeftRightSliderTests */,
 				D826CFD718450F7300C5E495 /* Frameworks */,
@@ -279,6 +282,7 @@
 				D89A0691184665730014A4FD /* 1111.png in Resources */,
 				D826CFEB18450F7300C5E495 /* Images.xcassets in Resources */,
 				D826D01A1846508C00C5E495 /* 2222.png in Resources */,
+				B360F261184C902A005D95BA /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,9 +434,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LeftRightSlider/LeftRightSlider-Prefix.pch";
 				INFOPLIST_FILE = "LeftRightSlider/LeftRightSlider-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -447,9 +452,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LeftRightSlider/LeftRightSlider-Prefix.pch";
 				INFOPLIST_FILE = "LeftRightSlider/LeftRightSlider-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
