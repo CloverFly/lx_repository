@@ -206,12 +206,19 @@ const int INTERSTITIAL_STEPS = 99;
     [CATransaction begin];
     [CATransaction setValue:[NSNumber numberWithFloat:0.6] forKey:kCATransactionAnimationDuration];
     [self addAnimation:@"position.x" view:_screenshotView startValue:rect.origin.x endValue:window.frame.size.width - 80.0];
+//    [self addAnimation:@"position.x" view:_screenshotView startValue:rect.origin.x endValue: - 80.0];
     [self addAnimation:@"position.y" view:_screenshotView startValue:rect.origin.y endValue:(window.frame.size.height - newHeight) / 2.0];
     [self addAnimation:@"bounds.size.width" view:_screenshotView startValue:rect.size.width endValue:newWidth];
     [self addAnimation:@"bounds.size.height" view:_screenshotView startValue:rect.size.height endValue:newHeight];
     
     _screenshotView.layer.position = CGPointMake(window.frame.size.width - 80.0, (window.frame.size.height - newHeight) / 2.0);
     _screenshotView.layer.bounds = CGRectMake(window.frame.size.width - 80.0, (window.frame.size.height - newHeight) / 2.0, newWidth, newHeight);
+    
+//    
+//    _screenshotView.layer.position = CGPointMake(-80.0, (window.frame.size.height - newHeight) / 2.0);
+//    _screenshotView.layer.bounds = CGRectMake(-80.0, (window.frame.size.height - newHeight) / 2.0, newWidth, newHeight);
+    
+    
     [CATransaction commit];
     
     if (_tableView.alpha == 0) {

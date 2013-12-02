@@ -28,7 +28,8 @@
 
 - (void)showMenu
 {
-    if (!_sideMenu) {
+    if (!_sideMenu)
+    {
         RESideMenuItem *homeItem = [[RESideMenuItem alloc] initWithTitle:@"Home" action:^(RESideMenu *menu, RESideMenuItem *item) {
             DemoViewController *viewController = [[DemoViewController alloc] init];
             viewController.title = item.title;
@@ -69,7 +70,7 @@
         }];
         helpCenterItem.subItems  = @[helpPlus1,helpPlus2];
         
-        RESideMenuItem *itemWithSubItems = [[RESideMenuItem alloc] initWithTitle:@"Sub items +" action:^(RESideMenu *menu, RESideMenuItem *item) {
+        RESideMenuItem *itemWithSubItems = [[RESideMenuItem alloc] initWithTitle:@"Sub items ++" action:^(RESideMenu *menu, RESideMenuItem *item) {
             NSLog(@"Item %@", item);
         }];
         itemWithSubItems.subItems = @[aroundMeItem,helpCenterItem];
