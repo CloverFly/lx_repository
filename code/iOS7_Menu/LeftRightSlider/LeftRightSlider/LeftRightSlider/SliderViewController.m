@@ -67,10 +67,10 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
         _RightSContentScale=0.85;
         _LeftSJudgeOffset=100;
         _RightSJudgeOffset=100;
-        _LeftSOpenDuration=0.4;
-        _RightSOpenDuration=0.4;
-        _LeftSCloseDuration=0.3;
-        _RightSCloseDuration=0.3;
+        _LeftSOpenDuration=0.2;
+        _RightSOpenDuration=0.2;
+        _LeftSCloseDuration=0.2;
+        _RightSCloseDuration=0.2;
     }
         
     return self;
@@ -164,9 +164,13 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
     [self.view sendSubviewToBack:_rightSideView];
     [self configureViewShadowWithDirection:RMoveDirectionRight];
     
-    [UIView animateWithDuration:_LeftSOpenDuration
+    [UIView animateWithDuration:_LeftSCloseDuration
                      animations:^{
                          _mainContentView.transform = conT;
+//                         CATransform3D rotate = CATransform3DMakeRotation(M_PI/-12, 0, 1, 0);
+//                        
+//                         _mainContentView.layer.transform = CATransform3DPerspect(rotate, CGPointMake(0, 0), 100);
+//                         _mainContentView.contentMode = UIControlContentVerticalAlignmentFill;
                      }
                      completion:^(BOOL finished) {
                          _tapGestureRec.enabled = YES;
@@ -295,12 +299,12 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
     CGFloat transcale = 0;
     switch (direction) {
         case RMoveDirectionLeft:
-            translateX = -160;//_RightSContentOffset;
-            transcale = _RightSContentScale;
+            translateX = -240;//_RightSContentOffset;
+            transcale = 0.9;//_RightSContentScale;
             break;
         case RMoveDirectionRight:
-            translateX = 160://_LeftSContentOffset;
-            transcale = _LeftSContentScale;
+            translateX = 240;//_LeftSContentOffset;
+            transcale = 0.9;//_LeftSContentScale;
             break;
         default:
             break;
