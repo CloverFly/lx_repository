@@ -7,7 +7,12 @@
 //
 
 #import "RightViewController.h"
-
+#import "AViewController.h"
+#import "BViewController.h"
+#import "CViewController.h"
+#import "DViewController.h"
+#import "EViewController.h"
+#import "FViewController.h"
 @interface RightViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
@@ -17,8 +22,9 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (self)
+    {
+
     }
     return self;
 }
@@ -26,27 +32,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    UIImageView *imgV=[[UIImageView alloc] initWithFrame:self.view.bounds];
-    [imgV setImage:[UIImage imageNamed:@"2222"]];
-    [self.view addSubview:imgV];
-    
-    UITableView *tableV=[[UITableView alloc] initWithFrame:CGRectMake(0, 200, self.view.frame.size.width, self.view.frame.size.height-200)];
-    tableV.backgroundColor=[UIColor clearColor];
-    tableV.delegate=self;
-    tableV.dataSource=self;
-    [self.view addSubview:tableV];
-    
-	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
--(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     static NSString *cellID=@"cellID";
     UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:cellID];
     
@@ -57,39 +51,54 @@
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     switch(indexPath.row){
         case 0:
-            cell.textLabel.text=@"R1111111";
+            cell.textLabel.text=@"AViewController";
             break;
         case 1:
-            cell.textLabel.text=@"R2222222";
+            cell.textLabel.text=@"BViewController";
             break;
         case 2:
-            cell.textLabel.text=@"R3333333";
+            cell.textLabel.text=@"CViewController";
             break;
         case 3:
-            cell.textLabel.text=@"R4444444";
+            cell.textLabel.text=@"DViewController";
             break;
         case 4:
-            cell.textLabel.text=@"R5555555";
+            cell.textLabel.text=@"EViewController";
             break;
-            
+        case 5:
+            cell.textLabel.text=@"FViewController";
+            break;
         default:
             break;
     }
+    cell.textLabel.textColor =[UIColor whiteColor];
     cell.textLabel.textAlignment = NSTextAlignmentCenter;
     return cell;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return 6;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.row) {
         case 0:
-            [[SliderViewController sharedSliderController] showContentControllerWithModel:@"MainViewController"];
+            [[SliderViewController sharedSliderController] showContentControllerWithModel:@"AViewController"];
             break;
         case 1:
-            [[SliderViewController sharedSliderController] showContentControllerWithModel:@"RightViewController"];
+            [[SliderViewController sharedSliderController] showContentControllerWithModel:@"BViewController"];
+            break;
+        case 2:
+            [[SliderViewController sharedSliderController] showContentControllerWithModel:@"CViewController"];
+            break;
+        case 3:
+            [[SliderViewController sharedSliderController] showContentControllerWithModel:@"DViewController"];
+            break;
+        case 4:
+            [[SliderViewController sharedSliderController] showContentControllerWithModel:@"EViewController"];
+            break;
+        case 5:
+            [[SliderViewController sharedSliderController] showContentControllerWithModel:@"FViewController"];
             break;
         default:
             break;

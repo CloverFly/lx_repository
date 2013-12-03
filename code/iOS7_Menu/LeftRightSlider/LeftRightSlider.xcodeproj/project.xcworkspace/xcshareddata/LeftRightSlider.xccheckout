@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F8496EB9-55F0-415D-B1A0-3A7EB46F9A19</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LeftRightSlider</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>74A9F570-B37E-4608-93C1-79C17F426ED2</key>
+		<string>https://github.com/CloverFly/lx_repository</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>trunk/code/iOS7_Menu/LeftRightSlider/LeftRightSlider.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>74A9F570-B37E-4608-93C1-79C17F426ED2</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>74A9F570-B37E-4608-93C1-79C17F426ED2</key>
+		<string>https://126.com@github.com/CloverFly/lx_repository</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://126.com@github.com/CloverFly/lx_repository/trunk/code/iOS7_Menu/LeftRightSlider/LeftRightSlider.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>74A9F570-B37E-4608-93C1-79C17F426ED2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryBranchesRelativeLocationKey</key>
+			<string>branches</string>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
+			<string>trunk</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>74A9F570-B37E-4608-93C1-79C17F426ED2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>lx_GitHub</string>
+		</dict>
+	</array>
+</dict>
+</plist>

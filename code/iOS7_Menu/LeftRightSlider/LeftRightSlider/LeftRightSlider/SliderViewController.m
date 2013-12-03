@@ -7,7 +7,8 @@
 //
 
 #import "SliderViewController.h"
-
+#import <QuartzCore/QuartzCore.h>
+#import "CATransform3DPerspect.h"
 typedef NS_ENUM(NSInteger, RMoveDirection) {
     RMoveDirectionLeft = 0,
     RMoveDirectionRight
@@ -87,7 +88,7 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
     
     [self initChildControllers:_LeftVC rightVC:_RightVC];
     
-    [self showContentControllerWithModel:@"MainViewController"];
+    [self showContentControllerWithModel:@"AViewController"];
     
     _tapGestureRec = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeSideBar)];
     _tapGestureRec.delegate=self;
@@ -146,7 +147,7 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
     
     if (_mainContentView.subviews.count > 0)
     {
-        UIView *view = [_mainContentView.subviews firstObject];
+        UIView *view = [_mainContentView.subviews objectAtIndex:0];
         [view removeFromSuperview];
     }
     
@@ -186,6 +187,7 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
                      completion:^(BOOL finished) {
                          _tapGestureRec.enabled = YES;
                      }];
+
 }
 
 - (void)closeSideBar
@@ -281,6 +283,7 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
             
             _tapGestureRec.enabled = NO;
         }
+
     }
 }
 
@@ -292,11 +295,11 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
     CGFloat transcale = 0;
     switch (direction) {
         case RMoveDirectionLeft:
-            translateX = -_RightSContentOffset;
+            translateX = -160;//_RightSContentOffset;
             transcale = _RightSContentScale;
             break;
         case RMoveDirectionRight:
-            translateX = _LeftSContentOffset;
+            translateX = 160://_LeftSContentOffset;
             transcale = _LeftSContentScale;
             break;
         default:

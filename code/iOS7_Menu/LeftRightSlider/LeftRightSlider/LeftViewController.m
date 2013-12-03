@@ -6,9 +6,13 @@
 //  Copyright (c) 2013年 Zhao Yiqi. All rights reserved.
 //
 
-#import "LeftViewController.h"
 #import "SliderViewController.h"
-
+#import "LAViewController.h"
+#import "LBViewController.h"
+#import "LCViewController.h"
+#import "LDViewController.h"
+#import "LEViewController.h"
+#import "LFViewController.h"
 @interface LeftViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
@@ -27,18 +31,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    UIImageView *imgV=[[UIImageView alloc] initWithFrame:self.view.bounds];
-    [imgV setImage:[UIImage imageNamed:@"3333"]];
-    [self.view addSubview:imgV];
-    
-    UITableView *tableV=[[UITableView alloc] initWithFrame:CGRectMake(0, 200, self.view.frame.size.width, self.view.frame.size.height-200)];
-    tableV.backgroundColor=[UIColor clearColor];
-    tableV.delegate=self;
-    tableV.dataSource=self;
-    [self.view addSubview:tableV];
-    
-	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,7 +39,8 @@
     // Dispose of any resources that can be recreated.
 }
 
--(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     static NSString *cellID=@"cellID";
     UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:cellID];
    
@@ -58,39 +51,55 @@
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     switch(indexPath.row){
         case 0:
-            cell.textLabel.text=@"1111111";
+            cell.textLabel.text=@"LAViewController";
             break;
         case 1:
-            cell.textLabel.text=@"2222222";
+            cell.textLabel.text=@"LBViewController";
             break;
         case 2:
-            cell.textLabel.text=@"3333333";
+            cell.textLabel.text=@"LCViewController";
             break;
         case 3:
-            cell.textLabel.text=@"4444444";
+            cell.textLabel.text=@"LDViewController";
             break;
         case 4:
-            cell.textLabel.text=@"5555555";
+            cell.textLabel.text=@"LEViewController";
+            break;
+        case 5:
+            cell.textLabel.text=@"LFViewController";
             break;
 
         default:
             break;
     }
-    
+    cell.textLabel.textAlignment = NSTextAlignmentCenter;
+    cell.textLabel.textColor =[UIColor whiteColor];
     return cell;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return 6;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.row) {
         case 0:
-            [[SliderViewController sharedSliderController] showContentControllerWithModel:@"MainViewController"];
+            [[SliderViewController sharedSliderController] showContentControllerWithModel:@"LAViewController"];
             break;
         case 1:
-            [[SliderViewController sharedSliderController] showContentControllerWithModel:@"RightViewController"];
+            [[SliderViewController sharedSliderController] showContentControllerWithModel:@"LBViewController"];
+            break;
+        case 2:
+            [[SliderViewController sharedSliderController] showContentControllerWithModel:@"LCViewController"];
+            break;
+        case 3:
+            [[SliderViewController sharedSliderController] showContentControllerWithModel:@"LDViewController"];
+            break;
+        case 4:
+            [[SliderViewController sharedSliderController] showContentControllerWithModel:@"LEViewController"];
+            break;
+        case 5:
+            [[SliderViewController sharedSliderController] showContentControllerWithModel:@"LFViewController"];
             break;
         default:
             break;
