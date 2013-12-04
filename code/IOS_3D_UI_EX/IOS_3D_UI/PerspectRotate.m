@@ -97,21 +97,27 @@
         case 2:
         {
             [self stopAnimation];
-            
-            CATransform3D rotate = CATransform3DMakeRotation(M_PI/6, 0, 1, 0);
-            image.layer.transform = CATransform3DPerspect(rotate, CGPointMake(0, 0), 200);
+            [UIView animateWithDuration:1.0 animations:^(void)
+             {
+
+                 CATransform3D rotate = CATransform3DMakeRotation(M_PI/-6, 0, 1, 0);
+                 image.layer.transform = CATransform3DPerspect(rotate, CGPointMake(0, 0), 200);
+                 image.frame = CGRectMake(-140, image.frame.origin.y+88, image.frame.size.width/2, image.frame.size.height/2);
+            }];
             break;
         }
         
         case 3:
         {
             [self stopAnimation];
-            
-            CATransform3D rotate = CATransform3DMakeRotation(M_PI/6, 0, 0, 1);
-            image.layer.transform = CATransform3DPerspect(rotate, CGPointMake(0, 0), 200);
+
+                 CATransform3D rotate = CATransform3DMakeRotation(M_PI/6, 0, 0, 1);
+                 image.layer.transform = CATransform3DPerspect(rotate, CGPointMake(0, 0), 200);
+
+             
+
             break;
-        }    
-        
+        } 
         case 4:
         {
             if (_animTimer==nil)
