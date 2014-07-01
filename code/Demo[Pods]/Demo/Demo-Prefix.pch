@@ -1,0 +1,38 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+#import "AppDelegate.h"
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "Tools.h"
+
+#import "Lx_BasicLib/LxLib.h"
+#import "LSCityModel.h"
+#import "GetLocation.h"
+#import "LsWeatherForcastModel.h"
+#import "AFNetworking.h"
+#import "ZipArchive.h"
+#import "SVProgressHUD.h"
+#import "JFFileManager.h"
+
+#endif
+
+#define LsAppDelegate ((AppDelegate*)[UIApplication sharedApplication].delegate)
+#define ISIOS7 ([[[UIDevice currentDevice]systemVersion]floatValue] >=7.0)
+
+//当前软件版本号
+#define KVersionNum         @"2004"
+
+//屏幕判断是否是是高屏
+#define iPhone5             ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+//屏幕的高度
+#define IPHONE_HEIGHT       ( double )[[ UIScreen mainScreen ] bounds ].size.height

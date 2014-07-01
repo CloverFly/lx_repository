@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		630856573DEE45FDA6DA8DBE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8736C0A7567347D286AC2E99 /* libPods.a */; };
+		B2CBB3481952C6B70027CD23 /* LxFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CBB3471952C6B70027CD23 /* LxFileManager.m */; };
+		B2CD12381949763900121FCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CD12371949763900121FCE /* Foundation.framework */; };
+		B2CD123A1949763900121FCE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CD12391949763900121FCE /* CoreGraphics.framework */; };
+		B2CD123C1949763900121FCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CD123B1949763900121FCE /* UIKit.framework */; };
+		B2CD12421949763900121FCE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2CD12401949763900121FCE /* InfoPlist.strings */; };
+		B2CD12441949763900121FCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD12431949763900121FCE /* main.m */; };
+		B2CD12481949763A00121FCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD12471949763A00121FCE /* AppDelegate.m */; };
+		B2CD12531949763A00121FCE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2CD12521949763A00121FCE /* Images.xcassets */; };
+		B2CD1272194976DF00121FCE /* LogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD1270194976DF00121FCE /* LogoViewController.m */; };
+		B2CD127C194977E200121FCE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD127A194977E200121FCE /* MainViewController.m */; };
+		B2CD127F1949783600121FCE /* LogoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2CD127E1949783600121FCE /* LogoViewController.xib */; };
+		B2CD128219498DC100121FCE /* SKJC_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD128119498DC100121FCE /* SKJC_ViewController.m */; };
+		B2CD128519498EB000121FCE /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD128419498EB000121FCE /* Tools.m */; };
+		B2CD128919499DAE00121FCE /* RainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD128719499DAE00121FCE /* RainViewController.m */; };
+		B2CD128A19499DAE00121FCE /* RainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2CD128819499DAE00121FCE /* RainViewController.xib */; };
+		B2CD12A31949A05300121FCE /* AddCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD128D1949A05300121FCE /* AddCityViewController.m */; };
+		B2CD12A41949A05300121FCE /* AddCityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2CD128E1949A05300121FCE /* AddCityViewController.xib */; };
+		B2CD12A51949A05300121FCE /* CityManageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD12901949A05300121FCE /* CityManageTableViewCell.m */; };
+		B2CD12A61949A05300121FCE /* CityManageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2CD12911949A05300121FCE /* CityManageTableViewCell.xib */; };
+		B2CD12A71949A05300121FCE /* CityMangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD12931949A05300121FCE /* CityMangeViewController.m */; };
+		B2CD12A81949A05300121FCE /* CityMangeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2CD12941949A05300121FCE /* CityMangeViewController.xib */; };
+		B2CD12A91949A05300121FCE /* clover.db in Resources */ = {isa = PBXBuildFile; fileRef = B2CD12951949A05300121FCE /* clover.db */; };
+		B2CD12AA1949A05300121FCE /* ForcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD12971949A05300121FCE /* ForcastViewController.m */; };
+		B2CD12AB1949A05300121FCE /* ForcastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2CD12981949A05300121FCE /* ForcastViewController.xib */; };
+		B2CD12AC1949A05300121FCE /* GetLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD129A1949A05300121FCE /* GetLocation.m */; };
+		B2CD12AD1949A05300121FCE /* LSCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD129C1949A05300121FCE /* LSCityModel.m */; };
+		B2CD12AE1949A05300121FCE /* LsWeatherForcastModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD129E1949A05300121FCE /* LsWeatherForcastModel.m */; };
+		B2CD12AF1949A05300121FCE /* Lx_BasicLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CD129F1949A05300121FCE /* Lx_BasicLib.framework */; };
+		B2CD12B01949A05300121FCE /* OneCityForcastView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD12A11949A05300121FCE /* OneCityForcastView.m */; };
+		B2CD12B11949A05300121FCE /* OneCityForcastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2CD12A21949A05300121FCE /* OneCityForcastView.xib */; };
+		B2CD12B31949A08900121FCE /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CD12B21949A08900121FCE /* Accelerate.framework */; };
+		B2CD12B51949A09100121FCE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CD12B41949A09100121FCE /* SystemConfiguration.framework */; };
+		B2CD12B71949A09600121FCE /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CD12B61949A09600121FCE /* ImageIO.framework */; };
+		B2CD12B91949A09B00121FCE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CD12B81949A09B00121FCE /* CFNetwork.framework */; };
+		B2CD12BB1949A0A100121FCE /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CD12BA1949A0A100121FCE /* libsqlite3.0.dylib */; };
+		B2CD12BD1949A0A800121FCE /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CD12BC1949A0A800121FCE /* libz.1.2.5.dylib */; };
+		B2CD12BF1949A0AE00121FCE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CD12BE1949A0AE00121FCE /* MobileCoreServices.framework */; };
+		B2CD12C11949A0B400121FCE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CD12C01949A0B400121FCE /* QuartzCore.framework */; };
+		B2CD12C31949A0BB00121FCE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CD12C21949A0BB00121FCE /* CoreText.framework */; };
+		B2CD12C51949A0C100121FCE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CD12C41949A0C100121FCE /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8736C0A7567347D286AC2E99 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		99E20F1C8CF64BB9BAA92B88 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		B2CBB3461952C6B70027CD23 /* LxFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LxFileManager.h; sourceTree = "<group>"; };
+		B2CBB3471952C6B70027CD23 /* LxFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LxFileManager.m; sourceTree = "<group>"; };
+		B2CD12341949763900121FCE /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2CD12371949763900121FCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B2CD12391949763900121FCE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B2CD123B1949763900121FCE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B2CD123F1949763900121FCE /* Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo-Info.plist"; sourceTree = "<group>"; };
+		B2CD12411949763900121FCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B2CD12431949763900121FCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B2CD12451949763A00121FCE /* Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
+		B2CD12461949763A00121FCE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B2CD12471949763A00121FCE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B2CD12521949763A00121FCE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B2CD12591949763A00121FCE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B2CD126F194976DF00121FCE /* LogoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoViewController.h; sourceTree = "<group>"; };
+		B2CD1270194976DF00121FCE /* LogoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoViewController.m; sourceTree = "<group>"; };
+		B2CD1279194977E200121FCE /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		B2CD127A194977E200121FCE /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		B2CD127E1949783600121FCE /* LogoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogoViewController.xib; sourceTree = "<group>"; };
+		B2CD128019498DC100121FCE /* SKJC_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKJC_ViewController.h; sourceTree = "<group>"; };
+		B2CD128119498DC100121FCE /* SKJC_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKJC_ViewController.m; sourceTree = "<group>"; };
+		B2CD128319498EB000121FCE /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		B2CD128419498EB000121FCE /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		B2CD128619499DAE00121FCE /* RainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RainViewController.h; sourceTree = "<group>"; };
+		B2CD128719499DAE00121FCE /* RainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RainViewController.m; sourceTree = "<group>"; };
+		B2CD128819499DAE00121FCE /* RainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RainViewController.xib; sourceTree = "<group>"; };
+		B2CD128C1949A05300121FCE /* AddCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCityViewController.h; sourceTree = "<group>"; };
+		B2CD128D1949A05300121FCE /* AddCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCityViewController.m; sourceTree = "<group>"; };
+		B2CD128E1949A05300121FCE /* AddCityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCityViewController.xib; sourceTree = "<group>"; };
+		B2CD128F1949A05300121FCE /* CityManageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityManageTableViewCell.h; sourceTree = "<group>"; };
+		B2CD12901949A05300121FCE /* CityManageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityManageTableViewCell.m; sourceTree = "<group>"; };
+		B2CD12911949A05300121FCE /* CityManageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityManageTableViewCell.xib; sourceTree = "<group>"; };
+		B2CD12921949A05300121FCE /* CityMangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityMangeViewController.h; sourceTree = "<group>"; };
+		B2CD12931949A05300121FCE /* CityMangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityMangeViewController.m; sourceTree = "<group>"; };
+		B2CD12941949A05300121FCE /* CityMangeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityMangeViewController.xib; sourceTree = "<group>"; };
+		B2CD12951949A05300121FCE /* clover.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = clover.db; sourceTree = "<group>"; };
+		B2CD12961949A05300121FCE /* ForcastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForcastViewController.h; sourceTree = "<group>"; };
+		B2CD12971949A05300121FCE /* ForcastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForcastViewController.m; sourceTree = "<group>"; };
+		B2CD12981949A05300121FCE /* ForcastViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForcastViewController.xib; sourceTree = "<group>"; };
+		B2CD12991949A05300121FCE /* GetLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetLocation.h; sourceTree = "<group>"; };
+		B2CD129A1949A05300121FCE /* GetLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetLocation.m; sourceTree = "<group>"; };
+		B2CD129B1949A05300121FCE /* LSCityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCityModel.h; sourceTree = "<group>"; };
+		B2CD129C1949A05300121FCE /* LSCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCityModel.m; sourceTree = "<group>"; };
+		B2CD129D1949A05300121FCE /* LsWeatherForcastModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LsWeatherForcastModel.h; sourceTree = "<group>"; };
+		B2CD129E1949A05300121FCE /* LsWeatherForcastModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LsWeatherForcastModel.m; sourceTree = "<group>"; };
+		B2CD129F1949A05300121FCE /* Lx_BasicLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lx_BasicLib.framework; sourceTree = "<group>"; };
+		B2CD12A01949A05300121FCE /* OneCityForcastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneCityForcastView.h; sourceTree = "<group>"; };
+		B2CD12A11949A05300121FCE /* OneCityForcastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneCityForcastView.m; sourceTree = "<group>"; };
+		B2CD12A21949A05300121FCE /* OneCityForcastView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneCityForcastView.xib; sourceTree = "<group>"; };
+		B2CD12B21949A08900121FCE /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		B2CD12B41949A09100121FCE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B2CD12B61949A09600121FCE /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		B2CD12B81949A09B00121FCE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B2CD12BA1949A0A100121FCE /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		B2CD12BC1949A0A800121FCE /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		B2CD12BE1949A0AE00121FCE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B2CD12C01949A0B400121FCE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B2CD12C21949A0BB00121FCE /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		B2CD12C41949A0C100121FCE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2CD12311949763900121FCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2CD12C51949A0C100121FCE /* CoreLocation.framework in Frameworks */,
+				B2CD12C31949A0BB00121FCE /* CoreText.framework in Frameworks */,
+				B2CD12C11949A0B400121FCE /* QuartzCore.framework in Frameworks */,
+				B2CD12BF1949A0AE00121FCE /* MobileCoreServices.framework in Frameworks */,
+				B2CD12BD1949A0A800121FCE /* libz.1.2.5.dylib in Frameworks */,
+				B2CD12BB1949A0A100121FCE /* libsqlite3.0.dylib in Frameworks */,
+				B2CD12B91949A09B00121FCE /* CFNetwork.framework in Frameworks */,
+				B2CD12B71949A09600121FCE /* ImageIO.framework in Frameworks */,
+				B2CD12B51949A09100121FCE /* SystemConfiguration.framework in Frameworks */,
+				B2CD12B31949A08900121FCE /* Accelerate.framework in Frameworks */,
+				B2CD123A1949763900121FCE /* CoreGraphics.framework in Frameworks */,
+				B2CD12AF1949A05300121FCE /* Lx_BasicLib.framework in Frameworks */,
+				B2CD123C1949763900121FCE /* UIKit.framework in Frameworks */,
+				B2CD12381949763900121FCE /* Foundation.framework in Frameworks */,
+				630856573DEE45FDA6DA8DBE /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2CD122B1949763900121FCE = {
+			isa = PBXGroup;
+			children = (
+				B2CD128B1949A05300121FCE /* CityWeather */,
+				B2CD123D1949763900121FCE /* Demo */,
+				B2CD12361949763900121FCE /* Frameworks */,
+				B2CD12351949763900121FCE /* Products */,
+				99E20F1C8CF64BB9BAA92B88 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		B2CD12351949763900121FCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2CD12341949763900121FCE /* Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2CD12361949763900121FCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2CD12C41949A0C100121FCE /* CoreLocation.framework */,
+				B2CD12C21949A0BB00121FCE /* CoreText.framework */,
+				B2CD12C01949A0B400121FCE /* QuartzCore.framework */,
+				B2CD12BE1949A0AE00121FCE /* MobileCoreServices.framework */,
+				B2CD12BC1949A0A800121FCE /* libz.1.2.5.dylib */,
+				B2CD12BA1949A0A100121FCE /* libsqlite3.0.dylib */,
+				B2CD12B81949A09B00121FCE /* CFNetwork.framework */,
+				B2CD12B61949A09600121FCE /* ImageIO.framework */,
+				B2CD12B41949A09100121FCE /* SystemConfiguration.framework */,
+				B2CD12B21949A08900121FCE /* Accelerate.framework */,
+				B2CD12371949763900121FCE /* Foundation.framework */,
+				B2CD12391949763900121FCE /* CoreGraphics.framework */,
+				B2CD123B1949763900121FCE /* UIKit.framework */,
+				B2CD12591949763A00121FCE /* XCTest.framework */,
+				8736C0A7567347D286AC2E99 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2CD123D1949763900121FCE /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				B2CD12461949763A00121FCE /* AppDelegate.h */,
+				B2CD12471949763A00121FCE /* AppDelegate.m */,
+				B2CD12521949763A00121FCE /* Images.xcassets */,
+				B2CD123E1949763900121FCE /* Supporting Files */,
+				B2CD126F194976DF00121FCE /* LogoViewController.h */,
+				B2CD1270194976DF00121FCE /* LogoViewController.m */,
+				B2CD127E1949783600121FCE /* LogoViewController.xib */,
+				B2CD1279194977E200121FCE /* MainViewController.h */,
+				B2CD127A194977E200121FCE /* MainViewController.m */,
+				B2CD128019498DC100121FCE /* SKJC_ViewController.h */,
+				B2CD128119498DC100121FCE /* SKJC_ViewController.m */,
+				B2CD128319498EB000121FCE /* Tools.h */,
+				B2CD128419498EB000121FCE /* Tools.m */,
+				B2CD128619499DAE00121FCE /* RainViewController.h */,
+				B2CD128719499DAE00121FCE /* RainViewController.m */,
+				B2CD128819499DAE00121FCE /* RainViewController.xib */,
+				B2CBB3461952C6B70027CD23 /* LxFileManager.h */,
+				B2CBB3471952C6B70027CD23 /* LxFileManager.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		B2CD123E1949763900121FCE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2CD123F1949763900121FCE /* Demo-Info.plist */,
+				B2CD12401949763900121FCE /* InfoPlist.strings */,
+				B2CD12431949763900121FCE /* main.m */,
+				B2CD12451949763A00121FCE /* Demo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2CD128B1949A05300121FCE /* CityWeather */ = {
+			isa = PBXGroup;
+			children = (
+				B2CD128C1949A05300121FCE /* AddCityViewController.h */,
+				B2CD128D1949A05300121FCE /* AddCityViewController.m */,
+				B2CD128E1949A05300121FCE /* AddCityViewController.xib */,
+				B2CD128F1949A05300121FCE /* CityManageTableViewCell.h */,
+				B2CD12901949A05300121FCE /* CityManageTableViewCell.m */,
+				B2CD12911949A05300121FCE /* CityManageTableViewCell.xib */,
+				B2CD12921949A05300121FCE /* CityMangeViewController.h */,
+				B2CD12931949A05300121FCE /* CityMangeViewController.m */,
+				B2CD12941949A05300121FCE /* CityMangeViewController.xib */,
+				B2CD12951949A05300121FCE /* clover.db */,
+				B2CD12961949A05300121FCE /* ForcastViewController.h */,
+				B2CD12971949A05300121FCE /* ForcastViewController.m */,
+				B2CD12981949A05300121FCE /* ForcastViewController.xib */,
+				B2CD12991949A05300121FCE /* GetLocation.h */,
+				B2CD129A1949A05300121FCE /* GetLocation.m */,
+				B2CD129B1949A05300121FCE /* LSCityModel.h */,
+				B2CD129C1949A05300121FCE /* LSCityModel.m */,
+				B2CD129D1949A05300121FCE /* LsWeatherForcastModel.h */,
+				B2CD129E1949A05300121FCE /* LsWeatherForcastModel.m */,
+				B2CD129F1949A05300121FCE /* Lx_BasicLib.framework */,
+				B2CD12A01949A05300121FCE /* OneCityForcastView.h */,
+				B2CD12A11949A05300121FCE /* OneCityForcastView.m */,
+				B2CD12A21949A05300121FCE /* OneCityForcastView.xib */,
+			);
+			name = CityWeather;
+			path = Demo/CityWeather;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2CD12331949763900121FCE /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2CD12691949763A00121FCE /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				C005BD6B6C28480DB7862A7F /* Check Pods Manifest.lock */,
+				B2CD12301949763900121FCE /* Sources */,
+				B2CD12311949763900121FCE /* Frameworks */,
+				B2CD12321949763900121FCE /* Resources */,
+				EE6D7114B46F47D0A5D5219D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = B2CD12341949763900121FCE /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2CD122C1949763900121FCE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = CloverStudio;
+			};
+			buildConfigurationList = B2CD122F1949763900121FCE /* Build configuration list for PBXProject "Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2CD122B1949763900121FCE;
+			productRefGroup = B2CD12351949763900121FCE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2CD12331949763900121FCE /* Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2CD12321949763900121FCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2CD12A91949A05300121FCE /* clover.db in Resources */,
+				B2CD12A41949A05300121FCE /* AddCityViewController.xib in Resources */,
+				B2CD12AB1949A05300121FCE /* ForcastViewController.xib in Resources */,
+				B2CD128A19499DAE00121FCE /* RainViewController.xib in Resources */,
+				B2CD12531949763A00121FCE /* Images.xcassets in Resources */,
+				B2CD12421949763900121FCE /* InfoPlist.strings in Resources */,
+				B2CD12A81949A05300121FCE /* CityMangeViewController.xib in Resources */,
+				B2CD12B11949A05300121FCE /* OneCityForcastView.xib in Resources */,
+				B2CD127F1949783600121FCE /* LogoViewController.xib in Resources */,
+				B2CD12A61949A05300121FCE /* CityManageTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C005BD6B6C28480DB7862A7F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EE6D7114B46F47D0A5D5219D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2CD12301949763900121FCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2CD12481949763A00121FCE /* AppDelegate.m in Sources */,
+				B2CD12AD1949A05300121FCE /* LSCityModel.m in Sources */,
+				B2CD1272194976DF00121FCE /* LogoViewController.m in Sources */,
+				B2CD128919499DAE00121FCE /* RainViewController.m in Sources */,
+				B2CD12A31949A05300121FCE /* AddCityViewController.m in Sources */,
+				B2CD12441949763900121FCE /* main.m in Sources */,
+				B2CD128519498EB000121FCE /* Tools.m in Sources */,
+				B2CD12A51949A05300121FCE /* CityManageTableViewCell.m in Sources */,
+				B2CD12AE1949A05300121FCE /* LsWeatherForcastModel.m in Sources */,
+				B2CBB3481952C6B70027CD23 /* LxFileManager.m in Sources */,
+				B2CD127C194977E200121FCE /* MainViewController.m in Sources */,
+				B2CD12B01949A05300121FCE /* OneCityForcastView.m in Sources */,
+				B2CD12A71949A05300121FCE /* CityMangeViewController.m in Sources */,
+				B2CD12AC1949A05300121FCE /* GetLocation.m in Sources */,
+				B2CD128219498DC100121FCE /* SKJC_ViewController.m in Sources */,
+				B2CD12AA1949A05300121FCE /* ForcastViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B2CD12401949763900121FCE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2CD12411949763900121FCE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2CD12671949763A00121FCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B2CD12681949763A00121FCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2CD126A1949763A00121FCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99E20F1C8CF64BB9BAA92B88 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Demo/CityWeather",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
+				INFOPLIST_FILE = "Demo/Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B2CD126B1949763A00121FCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99E20F1C8CF64BB9BAA92B88 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Demo/CityWeather",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
+				INFOPLIST_FILE = "Demo/Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2CD122F1949763900121FCE /* Build configuration list for PBXProject "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2CD12671949763A00121FCE /* Debug */,
+				B2CD12681949763A00121FCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2CD12691949763A00121FCE /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2CD126A1949763A00121FCE /* Debug */,
+				B2CD126B1949763A00121FCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2CD122C1949763900121FCE /* Project object */;
+}

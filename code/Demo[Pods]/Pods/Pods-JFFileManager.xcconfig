@@ -1,0 +1,1 @@
+PODS_JFFILEMANAGER_OTHER_LDFLAGS = -framework Foundation
