@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F2CA8915-6CD1-4564-94A6-AAF5625E85F9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LxTableBarDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B7F73371-372D-4A69-A92E-EE2250DCD3F8</key>
+		<string>svn://192.168.1.100/project/lesogo_scdztqt/trunk/code/mobile/Iphone/LxTableBarDemo</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LxTableBarDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B7F73371-372D-4A69-A92E-EE2250DCD3F8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>B7F73371-372D-4A69-A92E-EE2250DCD3F8</key>
+		<string>svn://192.168.1.100</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn://192.168.1.100/project/lesogo_scdztqt/trunk/code/mobile/Iphone/LxTableBarDemo/LxTableBarDemo.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B7F73371-372D-4A69-A92E-EE2250DCD3F8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryBranchesRelativeLocationKey</key>
+			<string>project/lesogo_scdztqt/branches</string>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlRepositoryTagsRelativeLocationKey</key>
+			<string>project/lesogo_scdztqt/tags</string>
+			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
+			<string>project/lesogo_scdztqt/trunk</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B7F73371-372D-4A69-A92E-EE2250DCD3F8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LxTableBarDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
