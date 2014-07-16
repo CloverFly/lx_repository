@@ -12,6 +12,10 @@
 
 @implementation LxAppDelegate
 @synthesize navigationController;
+-(UINavigationController*)getTopNavController
+{
+    return navigationController;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

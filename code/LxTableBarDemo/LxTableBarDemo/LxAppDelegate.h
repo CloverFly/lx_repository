@@ -16,6 +16,8 @@
 @property(nonatomic,strong)UINavigationController*navigationController;
 @property (strong, nonatomic) LxViewController *viewController;
 
+-(UINavigationController*)getTopNavController;
+
 @end
 
  

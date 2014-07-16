@@ -7,12 +7,29 @@
 //
 
 #import "RYCP_MENU_ViewController.h"
+#import "LxDocumentListViewController.h"
 
 @interface RYCP_MENU_ViewController ()
 
 @end
 
 @implementation RYCP_MENU_ViewController
+
+
+-(IBAction)MenuBtPressed:(UIButton*)sender
+{
+    LxDocumentListViewController* object=[[LxDocumentListViewController alloc] init];
+    if ([[object class] isSubclassOfClass:[UIViewController class]])
+    {
+        object.m_infoDic = [NSDictionary dictionaryWithObject:@"区域级" forKey:@"title"];
+        [[ShareAppDelegate getTopNavController] pushViewController:object animated:YES];
+    }
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
 
 -(id)init
 {
@@ -25,10 +42,7 @@
     }
     return self;
 }
--(UIStatusBarStyle)preferredStatusBarStyle
-{
-    return UIStatusBarStyleLightContent;
-}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

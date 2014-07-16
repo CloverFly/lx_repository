@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface RYCP_MENU_ViewController : UIViewController
-
+-(IBAction)MenuBtPressed:(UIButton*)sender;
 @end

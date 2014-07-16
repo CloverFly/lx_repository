@@ -3,7 +3,7 @@
 //
 
 #import <Availability.h>
-
+#import "LxAppDelegate.h"
 
 #ifndef __IPHONE_4_0
 #warning "This project uses features only available in iOS SDK 4.0 and later."
@@ -14,7 +14,7 @@
     #import <Foundation/Foundation.h>
 #endif
 
-
+#define RY_BGCOLOR [UIColor colorWithRed:235/255.00 green:248/255.00 blue:249/255.00 alpha:1.0]
 
 //-------------------获取设备大小-------------------------
 //NavBar高度
@@ -23,7 +23,7 @@
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 //主程序delegate
-#define ShareAppDelegate         ((DZQXAppDelegate*)[UIApplication sharedApplication].delegate)
+#define ShareAppDelegate         ((LxAppDelegate*)[UIApplication sharedApplication].delegate)
 //-------------------获取设备大小-------------------------
 
 
