@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>CLOVER_CUS_UIALTView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/**
+ *  弹出altTableview
+ *
+ *  @param sender 按钮
+ */
+-(void)selectedQXBt:(UIButton*)sender
+{
+
+    SBTableAlert *alert = [[SBTableAlert alloc] init];
+    [alert title:@"选择区县"];
+    [alert setDelegate:self];
+    [alert setDataSource:self];
+    [alert show];
+}
+
+
+
+#pragma mark - SBTableAlertDataSource
+
+- (UITableViewCell *)tableAlert:(SBTableAlert *)tableAlert cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	UITableViewCell *cell;
+	cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+
+    NSDictionary *tempDic = [[m_selectedCityDic objectForKey:K_datas] objectAtIndex:[indexPath row]];
+	cell.textLabel.text = [tempDic objectForKey:K_name];
+	return cell;
+}
+
+- (NSInteger)tableAlert:(SBTableAlert *)tableAlert numberOfRowsInSection:(NSInteger)section
+{
+	if ([[m_selectedCityDic objectForKey:K_datas] count]&gt;0)
+	{
+		return [[m_selectedCityDic objectForKey:K_datas] count];
+	}
+	return 0;
+}
+
+#pragma mark - SBTableAlertDelegate
+
+- (void)tableAlert:(SBTableAlert *)tableAlert didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	[tableAlert.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSDictionary *tempDic = [[m_selectedCityDic objectForKey:K_datas] objectAtIndex:[indexPath row]];
+    
+    if ([delegate respondsToSelector:@selector(jc_ListView:didSelectQXCode:andName:)])
+    {
+        [delegate jc_ListView:self didSelectQXCode:tempDic[K_code] andName:tempDic[K_name]];
+    }
+    UIButton*selectedBt = (UIButton*)[self viewWithTag:0x888];
+    [selectedBt setTitle:tempDic[K_name] forState:0];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>AC0DE514-0D74-4870-BE59-8EC934FF918C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UIAltTableView弹出选择</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIAltTableView弹出选择</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

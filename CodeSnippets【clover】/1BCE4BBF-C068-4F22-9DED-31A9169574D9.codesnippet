@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>CLOVER_COPYFILE</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/**
+ *  复制文件
+ */
+-(void)copyFileDatabase
+{
+	NSString	*oldPath = [[NSBundle mainBundle] pathForResource:@"clover"
+														ofType:@"db"];
+	NSArray *paths = NSSearchPathForDirectoriesInDomains( NSDocumentDirectory,NSUserDomainMask, YES);
+	NSString *documentsDirectory = [NSString stringWithFormat:@"%@/%@/",[paths objectAtIndex:0],@"db"];
+    [self CreateFolder:documentsDirectory];
+	NSString *newPath = [documentsDirectory stringByAppendingPathComponent:@"clover.db"];
+	if (![[NSFileManager defaultManager] fileExistsAtPath:newPath])
+	{
+		//文件不存在就copy
+		[[NSFileManager defaultManager] copyItemAtPath:oldPath toPath:newPath error:nil];
+	}
+}
+
+/**
+ *  创建文件夹
+ *
+ *  @param aFolderName 文件夹路径
+ */
+-(void)CreateFolder:(NSString*)aFolderName
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    BOOL isDir = NO;
+    BOOL existed = [fileManager fileExistsAtPath:aFolderName isDirectory:&amp;isDir];
+    if (!existed)
+    {
+        [fileManager createDirectoryAtPath:aFolderName withIntermediateDirectories:YES attributes:nil error:nil];
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1BCE4BBF-C068-4F22-9DED-31A9169574D9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>复制文件到指定路径，路径不存在创建</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>文件复制</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

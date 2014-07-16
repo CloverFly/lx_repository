@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>CLOVER_SINGLE_OBJECT</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>static WeatherSetShare *shareSetting = nil;
++(WeatherSetShare *)sharedObject
+{
+    @synchronized(self)
+    {
+        if(shareSetting == nil)
+        {
+            shareSetting = [[self alloc] init];
+        }
+    }
+    return shareSetting;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>97E922E2-AD0C-445D-B888-6EA2584F6D89</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>单例类</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
