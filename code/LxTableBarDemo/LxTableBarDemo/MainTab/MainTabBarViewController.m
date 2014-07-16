@@ -56,7 +56,7 @@
     
     m_MenuScrolViw.frame = CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-m_MenuScrolViw.frame.size.height-(ISIOS7?0:20), m_MenuScrolViw.frame.size.width, m_MenuScrolViw.frame.size.height);
     m_selectedIndex = 0;
-    m_currShowView  = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, [UIScreen mainScreen].bounds.size.height)];
+    m_currShowView  = [[UIView alloc] initWithFrame:CGRectMake(0, ISIOS7?0:-20, 320, [UIScreen mainScreen].bounds.size.height)];
     [self.view insertSubview:m_currShowView belowSubview:m_MenuScrolViw];
     
     

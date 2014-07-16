@@ -5,47 +5,45 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>F2CA8915-6CD1-4564-94A6-AAF5625E85F9</string>
+	<string>AB29F581-AA46-485A-BEB9-10D67B670799</string>
 	<key>IDESourceControlProjectName</key>
 	<string>LxTableBarDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>B7F73371-372D-4A69-A92E-EE2250DCD3F8</key>
-		<string>svn://192.168.1.100/project/lesogo_scdztqt/trunk/code/mobile/Iphone/LxTableBarDemo</string>
+		<key>246657EE-8C58-44DC-9764-F079330B53F1</key>
+		<string>https://github.com/CloverFly/lx_repository</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>LxTableBarDemo.xcodeproj/project.xcworkspace</string>
+	<string>trunk/code/LxTableBarDemo/LxTableBarDemo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>B7F73371-372D-4A69-A92E-EE2250DCD3F8</key>
-		<string>../..</string>
+		<key>246657EE-8C58-44DC-9764-F079330B53F1</key>
+		<string>../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectRepositoryRootDictionary</key>
 	<dict>
-		<key>B7F73371-372D-4A69-A92E-EE2250DCD3F8</key>
-		<string>svn://192.168.1.100</string>
+		<key>246657EE-8C58-44DC-9764-F079330B53F1</key>
+		<string>https://126.com@github.com/CloverFly/lx_repository</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>svn://192.168.1.100/project/lesogo_scdztqt/trunk/code/mobile/Iphone/LxTableBarDemo/LxTableBarDemo.xcodeproj</string>
+	<string>https://126.com@github.com/CloverFly/lx_repository/trunk/code/LxTableBarDemo/LxTableBarDemo.xcodeproj</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B7F73371-372D-4A69-A92E-EE2250DCD3F8</string>
+	<string>246657EE-8C58-44DC-9764-F079330B53F1</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryBranchesRelativeLocationKey</key>
-			<string>project/lesogo_scdztqt/branches</string>
+			<string>branches</string>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.subversion</string>
-			<key>IDESourceControlRepositoryTagsRelativeLocationKey</key>
-			<string>project/lesogo_scdztqt/tags</string>
 			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
-			<string>project/lesogo_scdztqt/trunk</string>
+			<string>trunk</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>B7F73371-372D-4A69-A92E-EE2250DCD3F8</string>
+			<string>246657EE-8C58-44DC-9764-F079330B53F1</string>
 			<key>IDESourceControlWCCName</key>
-			<string>LxTableBarDemo</string>
+			<string>lx_repository</string>
 		</dict>
 	</array>
 </dict>
